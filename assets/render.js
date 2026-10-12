@@ -1,0 +1,324 @@
+/* =========================================================================
+   RENDER.JS — the "engine." You should not need to edit this file.
+   All customization happens in nav-config.js.
+   ========================================================================= */
+
+function getQueryParam(name) {
+  return new URLSearchParams(window.location.search).get(name);
+}
+
+/* ---------- HOMEPAGE (one per role: apprentice.html, tech.html, etc.) ---------- */
+function renderHub(role) {
+  document.getElementById("role-tag").textContent = ROLE_LABELS[role] + " View";
+  document.title = "Guides — " + ROLE_LABELS[role];
+
+  const extrasRow = document.getElementById("extras-row");
+  const extras = ROLE_EXTRAS[role] || [];
+  extras.forEach(e => {
+    const a = document.createElement("a");
+    a.href = "guide.html?role=" + role + "&file=" + encodeURIComponent(e.file);
+    a.textContent = e.label;
+    extrasRow.appendChild(a);
+  });
+
+  const visible = SOP_LIBRARY.filter(s => s.roles.includes(role));
+  const featured = visible.filter(s => s.featured.includes(role));
+  const rest = visible.filter(s => !s.featured.includes(role));
+
+  const headerMenu = document.getElementById("jump-nav-menu");
+  const headerToggle = document.getElementById("jump-nav-toggle");
+  if (headerMenu && headerToggle) {
+    if (!visible.length) {
+      headerToggle.style.display = "none";
+    } else {
+      visible.forEach(s => {
+        const a = document.createElement("a");
+        a.href = "guide.html?role=" + role + "&file=" + encodeURIComponent(s.file);
+        a.textContent = s.title;
+        headerMenu.appendChild(a);
+      });
+      headerToggle.addEventListener("click", () => headerMenu.classList.toggle("open"));
+    }
+  }
+
+  const container = document.getElementById("sop-list");
+
+  function addCard(sop, isFeatured) {
+    const a = document.createElement("a");
+    a.href = "guide.html?role=" + role + "&file=" + encodeURIComponent(sop.file);
+    a.className = "sop-card" + (isFeatured ? " featured" : "");
+    a.innerHTML = '<div class="sop-title">' + sop.title + "</div>";
+    container.appendChild(a);
+  }
+
+  if (featured.length) {
+    const label = document.createElement("div");
+    label.className = "section-label";
+    label.textContent = "Most relevant to you";
+    container.appendChild(label);
+    featured.forEach(s => addCard(s, true));
+  }
+
+  // Roles with a role switcher (see ROLE_SWITCHER in nav-config.js) show
+  // buttons for the other role views instead of "All other guides".
+  const switchTo = (typeof ROLE_SWITCHER !== "undefined" && ROLE_SWITCHER[role]) || null;
+  if (switchTo && switchTo.length) {
+    // Extra space above the role buttons. Change 1.5rem to adjust.
+    const gap = document.createElement("div");
+    gap.style.height = "1.5rem";
+    container.appendChild(gap);
+    const label3 = document.createElement("div");
+    label3.className = "section-label";
+    label3.textContent = "See what each role sees";
+    container.appendChild(label3);
+    const grid = document.createElement("div");
+    grid.className = "role-switcher";
+    switchTo.forEach(r => {
+      const a = document.createElement("a");
+      a.href = r + ".html";
+      a.className = "role-switch";
+      a.textContent = ROLE_LABELS[r];
+      grid.appendChild(a);
+    });
+    container.appendChild(grid);
+  } else if (rest.length) {
+    const label2 = document.createElement("div");
+    label2.className = "section-label";
+    label2.textContent = "All other guides";
+    container.appendChild(label2);
+    rest.forEach(s => addCard(s, false));
+  }
+
+  if (!visible.length && !switchTo) {
+    container.innerHTML = "<p>No guides assigned to this view yet.</p>";
+  }
+}
+
+/* ---------- Extra blank lines in a .md file = extra space on the page ----------
+   Markdown normally collapses blank lines. Here, every blank line beyond the
+   first one becomes a spacer, so adding blank lines in the file adds space. */
+function addSpacers(md) {
+  return md.replace(/\r\n/g, "\n").replace(/\n[ \t]*\n((?:[ \t]*\n)+)/g, (m, extra) => {
+    const count = (extra.match(/\n/g) || []).length;
+    return "\n\n" + '<div class="md-spacer" style="height:1rem"></div>\n\n'.repeat(count);
+  });
+}
+
+/* ---------- GUIDE PAGE (guide.html) ---------- */
+async function renderSopPage() {
+  const role = getQueryParam("role") || "tech";
+  const file = getQueryParam("file");
+  const contentDiv = document.getElementById("sop-content");
+
+  document.getElementById("role-tag").textContent = (ROLE_LABELS[role] || "") + " View";
+  document.getElementById("back-link").href = role + ".html";
+
+  const entry = SOP_LIBRARY.find(s => s.file === file) ||
+                Object.values(ROLE_EXTRAS).flat().find(e => e.file === file);
+
+  if (!entry) {
+    contentDiv.innerHTML = "<p>Guide not found.</p>";
+    return;
+  }
+
+  document.title = entry.title || entry.label;
+
+  let mdText;
+  try {
+    const res = await fetch(file);
+    if (!res.ok) throw new Error(res.status);
+    mdText = await res.text();
+  } catch (err) {
+    contentDiv.innerHTML = "<p><strong>Couldn't load this page.</strong> The file <code>" + file +
+      "</code> wasn't found (" + err.message + "). Check that it's in the right folder and the name matches exactly.</p>";
+    return;
+  }
+
+  const html = marked.parse(addSpacers(mdText), { breaks: true });
+  contentDiv.innerHTML = html;
+  enhanceContent(contentDiv);
+
+  // Render any Mermaid flowchart blocks embedded in the SOP's markdown
+  if (window.mermaid) {
+    mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+    mermaid.run({ querySelector: ".mermaid" });
+  }
+
+  if (entry.pdf) {
+    const link = document.createElement("a");
+    link.className = "pdf-download";
+    link.href = entry.pdf;
+    link.textContent = "⬇ Download desktop PDF version";
+    contentDiv.appendChild(link);
+  }
+
+  // Jump menu lists headings AND collapsible sections (accordion titles).
+  const headings = contentDiv.querySelectorAll("h2, h3, details.accordion > summary");
+  const menu = document.getElementById("jump-nav-menu");
+  const toggle = document.getElementById("jump-nav-toggle");
+
+  if (!headings.length) {
+    toggle.style.display = "none";
+  } else {
+    headings.forEach((h, i) => {
+      const id = "section-" + i;
+      h.id = id;
+      const a = document.createElement("a");
+      a.href = "#" + id;
+      a.textContent = (h.tagName === "H3" ? "\u2003" : "") + h.textContent;
+      a.addEventListener("click", () => {
+        menu.classList.remove("open");
+        const d = h.closest("details");
+        if (d) d.open = true;
+      });
+      menu.appendChild(a);
+    });
+    toggle.addEventListener("click", () => menu.classList.toggle("open"));
+  }
+}
+
+/* ---------- Page polish: scrollable tables + tap-to-enlarge images ----------
+   Styles live here (not in style.css) so nothing needs to be pasted. */
+function injectEnhanceStyles() {
+  if (document.getElementById("enhance-styles")) return;
+  const css = `
+    #sop-content .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0; }
+    #sop-content .table-scroll table { min-width: 0; }
+    #sop-content th, #sop-content td { overflow-wrap: normal; word-break: normal; hyphens: none; }
+    #sop-content img { cursor: zoom-in; }
+    #sop-content .align-left { text-align: left !important; }
+    #sop-content .align-center { text-align: center !important; }
+    #sop-content .align-right { text-align: right !important; }
+    .lightbox { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.88);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: env(safe-area-inset-top, 0px) 0.75rem env(safe-area-inset-bottom, 0px); cursor: zoom-out; }
+    .lightbox img { max-width: 100%; max-height: 85vh; object-fit: contain; border-radius: 6px; background: #fff; }
+    .lightbox p { color: #fff; margin: 0.75rem 0 0; font-size: 0.95rem; text-align: center; }
+    .lightbox .lb-close { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 0.5rem); right: 0.75rem;
+      background: none; border: 0; color: #fff; font-size: 2rem; line-height: 1; min-width: 44px; min-height: 44px; cursor: pointer; }
+  `;
+  const style = document.createElement("style");
+  style.id = "enhance-styles";
+  style.textContent = css;
+  document.head.appendChild(style);
+}
+
+function enhanceContent(root) {
+  injectEnhanceStyles();
+
+  // Every table scrolls sideways inside its own box instead of squeezing words.
+  root.querySelectorAll("table").forEach(t => {
+    if (t.parentElement && t.parentElement.classList.contains("table-scroll")) return;
+    const wrap = document.createElement("div");
+    wrap.className = "table-scroll";
+    t.parentNode.insertBefore(wrap, t);
+    wrap.appendChild(t);
+  });
+
+  // Photo carousels: <div class="carousel"> holding <figure> blocks.
+  root.querySelectorAll(".carousel").forEach(buildCarousel);
+
+  // Screenshot not uploaded yet: show a labeled placeholder with the exact
+  // file name to save it as, instead of a broken-image icon.
+  root.querySelectorAll("img").forEach(img => {
+    const swap = () => {
+      if (!img.isConnected) return;
+      const ph = document.createElement("div");
+      ph.className = "shot-placeholder";
+      const name = (img.getAttribute("src") || "").replace(/^assets\/img\//, "");
+      ph.innerHTML = "<strong>Screenshot coming</strong><span>" + name + "</span>";
+      img.replaceWith(ph);
+    };
+    img.addEventListener("error", swap, { once: true });
+    // Already failed before this ran (fast 404): swap right away.
+    if (img.complete && img.naturalWidth === 0 && img.getAttribute("src")) swap();
+  });
+
+  // Tap or click any image to see it full screen; tap again (or Esc) to close.
+  root.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", () => openLightbox(img));
+  });
+}
+
+function openLightbox(img) {
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-label", img.alt || "Image");
+  const big = document.createElement("img");
+  big.src = img.src;
+  big.alt = img.alt || "";
+  const cap = img.closest("figure") && img.closest("figure").querySelector("figcaption");
+  const close = document.createElement("button");
+  close.className = "lb-close";
+  close.setAttribute("aria-label", "Close");
+  close.textContent = "\u00d7";
+  box.appendChild(close);
+  box.appendChild(big);
+  if (cap) { const p = document.createElement("p"); p.textContent = cap.textContent; box.appendChild(p); }
+  function shut() { box.remove(); document.removeEventListener("keydown", onKey); }
+  function onKey(e) { if (e.key === "Escape") shut(); }
+  box.addEventListener("click", shut);
+  document.addEventListener("keydown", onKey);
+  document.body.appendChild(box);
+  close.focus();
+}
+
+/* ---------- Photo carousel ----------
+   In a .md file, wrap screenshots like this:
+     <div class="carousel">
+       <figure class="shot"><img src="..." alt="..."><figcaption>...</figcaption></figure>
+       <figure class="shot">...</figure>
+     </div>
+   Phones swipe; desktop uses the arrows or dots. Tap any slide to enlarge. */
+function buildCarousel(box) {
+  if (box.dataset.built) return;
+  box.dataset.built = "1";
+  const slides = Array.from(box.querySelectorAll(":scope > figure, :scope > p > figure"));
+  if (slides.length < 2) return;
+  const track = document.createElement("div");
+  track.className = "carousel-track";
+  slides.forEach(f => track.appendChild(f));
+  box.innerHTML = "";
+  box.appendChild(track);
+
+  const controls = document.createElement("div");
+  controls.className = "carousel-controls";
+  const prev = document.createElement("button");
+  prev.className = "carousel-btn"; prev.textContent = "\u2039"; prev.setAttribute("aria-label", "Previous photo");
+  const next = document.createElement("button");
+  next.className = "carousel-btn"; next.textContent = "\u203A"; next.setAttribute("aria-label", "Next photo");
+  const dots = document.createElement("div");
+  dots.className = "carousel-dots";
+  slides.forEach((_, i) => {
+    const d = document.createElement("button");
+    d.className = "carousel-dot";
+    d.setAttribute("aria-label", "Photo " + (i + 1) + " of " + slides.length);
+    d.addEventListener("click", () => go(i));
+    dots.appendChild(d);
+  });
+  controls.append(prev, dots, next);
+  box.appendChild(controls);
+
+  function step() { return slides.length > 1 ? (slides[1].offsetLeft - slides[0].offsetLeft) : (track.clientWidth || 1); }
+  function current() { return Math.round(track.scrollLeft / (step() || 1)); }
+  function go(i) {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    track.scrollTo({ left: i * step(), behavior: "smooth" });
+  }
+  function update() {
+    const i = current();
+    dots.querySelectorAll(".carousel-dot").forEach((d, n) => d.classList.toggle("active", n === i));
+    prev.disabled = i === 0;
+    next.disabled = i === slides.length - 1;
+  }
+  prev.addEventListener("click", () => go(current() - 1));
+  next.addEventListener("click", () => go(current() + 1));
+  track.addEventListener("scroll", () => window.requestAnimationFrame(update));
+  box.tabIndex = 0;
+  box.addEventListener("keydown", e => {
+    if (e.key === "ArrowLeft") go(current() - 1);
+    if (e.key === "ArrowRight") go(current() + 1);
+  });
+  update();
+}
