@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Southland Onboarding — Choose your role</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body>
+<header class="sticky">
+  <div class="top-row">
+    <h1>Southland Onboarding</h1>
+  </div>
+  <span class="role-tag">Employee Lifecycle</span>
+</header>
+<main>
+  <h2 class="landing-heading">Onboarding, role changes and offboarding</h2>
+  <p class="landing-intro">One system runs every employee change, from the offer letter to the last day. Pick your role to see the guides that matter to you.</p>
+  <p><span class="status-pill">Built · pilot pending</span></p>
+
+  <nav class="role-picker" aria-label="Choose your role">
+    <a class="role-card" href="hr.html">
+      <span class="role-name">HR</span>
+      <span class="role-desc">Start cases, track progress across every team, keep steps moving.</span>
+    </a>
+    <a class="role-card" href="manager.html">
+      <span class="role-name">Hiring Manager</span>
+      <span class="role-desc">See what's due for your people and send requests in one click.</span>
+    </a>
+  </nav>
+
+  <p style="margin-top:2rem"><a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md">New here? Start with How It Works →</a></p>
+</main>
+</body>
+</html>
