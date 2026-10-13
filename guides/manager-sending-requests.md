@@ -77,7 +77,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
 
 <ol class="chunked-list">
 <li>Open a draft. <strong>Send To</strong>, <strong>CC</strong>, <strong>Subject</strong> and <strong>Body</strong> are all editable, and your changes only affect this one email.</li>
-<li>Then either click <strong>Open in Outlook</strong>, send it and tick <strong>Mark Complete</strong> when done.</li>
+<li>Then click <strong>Open in Outlook</strong> and tick <strong>Mark Complete</strong> when done.</li>
 </ol>
 
 </div> </details>
@@ -85,7 +85,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
 <details class="accordion"> <summary>After it's sent</summary> <div class="accordion-body">
 
 <div class="numbered-group">
-Requests that need a next step (laptop delivered, fob handed over, policy signed) move to **Follow Up**. The step's **Follow-Up Instructions** say exactly what's left. Tick **Mark Complete** once it's done.</div>
+Requests that need a next step (laptop delivered, fob handed over, policy signed) move to <strong>Follow Up</strong>. The step's <strong>Follow-Up Instructions</strong> say exactly what's left. <strong>Mark Complete</strong> once it's done.</div>
 <div class="numbered-group">
 Everything else completes as soon as it's sent.</div>
 <div class="numbered-group">
