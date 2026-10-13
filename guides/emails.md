@@ -1,6 +1,6 @@
 # Every Automated Email
 
-Every email the system sends: who gets it, when, and whether it can be turned off. Requests to IT, Safety and other teams go out in the manager's name, and replies come back to the manager.
+Every email the system sends: who gets it, when, and whether it can be turned off. The rule behind all of them is **one email per thing you need to do**. Requests to IT, Safety and other teams go out in the manager's name, and replies come back to the manager.
 
 <details class="accordion"> <summary>Requests to other teams</summary> <div class="accordion-body">
 
@@ -13,7 +13,7 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 <table>
 <thead><tr><th>Email</th><th>Sent when</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td>Task request (laptop, phone, access, dispatch, vehicle policy…)</td><td>The step is due soon, or the manager sends it early from Quick Deploy</td><td>Fully Automated managers: sent directly. Review &amp; Send managers, union recipients and involuntary exits: drafted first.</td></tr>
+<tr><td>Request (laptop, phone, building access, safety, vehicle policy, union dispatch…)</td><td>3 days before the step is due, or right away from Quick Deploy</td><td>Fully Automated managers: sent directly. Review &amp; Send managers, union halls and involuntary exits: drafted for review first.</td></tr>
 </tbody>
 </table>
 </div>
@@ -22,24 +22,24 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 
 </div> </details>
 
-<details class="accordion"> <summary>Notices to managers</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Notices to managers: something to do</summary> <div class="accordion-body">
 
 <div class="carousel">
 <figure class="shot">
-  <img src="assets/img/emails/email-new-case.png" alt="New case notice to a manager" loading="lazy">
-  <figcaption>New case on your team.</figcaption>
+  <img src="assets/img/emails/email-draft-ready.png" alt="Draft ready for review notice with a link to the Draft Queue" loading="lazy">
+  <figcaption>A draft is ready for your review.</figcaption>
 </figure>
 <figure class="shot">
-  <img src="assets/img/emails/email-draft-ready.png" alt="Draft ready for review notice" loading="lazy">
-  <figcaption>A draft is ready to review.</figcaption>
+  <img src="assets/img/emails/email-draft-ready-union.png" alt="Draft ready for review for a union dispatch request" loading="lazy">
+  <figcaption>Union dispatch requests are always reviewed first.</figcaption>
 </figure>
 <figure class="shot">
-  <img src="assets/img/emails/email-blocked.png" alt="Waiting-on-a-step notice naming the step to finish" loading="lazy">
+  <img src="assets/img/emails/email-waiting-on-step.png" alt="Waiting on a step notice naming the step to finish, with a Manager Triage link" loading="lazy">
   <figcaption>A request is waiting on another step.</figcaption>
 </figure>
 <figure class="shot">
-  <img src="assets/img/emails/email-weekly-rollup.png" alt="Monday roll-up email with overdue and due-soon tables" loading="lazy">
-  <figcaption>The Monday roll-up.</figcaption>
+  <img src="assets/img/emails/email-new-step-ready.png" alt="New step ready notice for a hands-on step" loading="lazy">
+  <figcaption>A hands-on step just became available.</figcaption>
 </figure>
 </div>
 
@@ -47,14 +47,54 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 <table>
 <thead><tr><th>Email</th><th>Sent when</th><th>Can turn off?</th></tr></thead>
 <tbody>
-<tr><td>New case on your team</td><td>HR starts an onboarding, role change or departure. Departures are worded confidentially.</td><td>Yes</td></tr>
-<tr><td>Draft ready for review</td><td>A request is drafted into the Draft Queue</td><td>Yes (the draft is still made)</td></tr>
-<tr><td>New step ready</td><td>A hands-on step unlocks after its prerequisite is done. Email steps don't send this; their own email is the notice.</td><td>Yes (the step is still added)</td></tr>
-<tr><td>Waiting on a step</td><td>A request is ready but waits on another step. Links to Manager Triage.</td><td>Yes</td></tr>
+<tr><td>Draft ready for review</td><td>A request is drafted into your Draft Queue. Links straight to it.</td><td>Yes (the draft is still made)</td></tr>
+<tr><td>Waiting on a step</td><td>A request is ready but waits on another step, such as the Local 393 dispatch form. Names the step and links to Manager Triage.</td><td>Yes</td></tr>
+<tr><td>New step ready</td><td>A hands-on step unlocks once the step before it is done. Email steps don't send this; their own email is the notice.</td><td>Yes (the step is still added)</td></tr>
+</tbody>
+</table>
+</div>
+
+</div> </details>
+
+<details class="accordion"> <summary>Notices to managers: updates</summary> <div class="accordion-body">
+
+<div class="carousel">
+<figure class="shot">
+  <img src="assets/img/emails/email-new-case.png" alt="New case notice to a manager" loading="lazy">
+  <figcaption>A new case on your team.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/emails/email-role-change-received.png" alt="Role change received notice saying the request is with HR" loading="lazy">
+  <figcaption>Your role change request is with HR.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/emails/email-case-complete.png" alt="Case complete notice" loading="lazy">
+  <figcaption>Every step on a case is done.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/emails/email-weekly-rollup.png" alt="Monday roll-up email with overdue and due-soon tables" loading="lazy">
+  <figcaption>The Monday roll-up.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/emails/email-hr-remind-manager.png" alt="HR check-in email listing overdue and due-soon steps" loading="lazy">
+  <figcaption>An HR check-in.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/emails/email-settings-changed.png" alt="Settings changed confirmation" loading="lazy">
+  <figcaption>Your settings changed.</figcaption>
+</figure>
+</div>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>Email</th><th>Sent when</th><th>Can turn off?</th></tr></thead>
+<tbody>
+<tr><td>New case on your team</td><td>A new hire or departure is opened for your team. Departures are worded confidentially.</td><td>Yes</td></tr>
+<tr><td>Role change received</td><td>You file a role change. It tells you the request is with HR; your steps appear once HR approves.</td><td>Yes</td></tr>
 <tr><td>Case complete</td><td>Every step is done. Departures get a neutral closing note.</td><td>Yes</td></tr>
-<tr><td>Weekly roll-up</td><td>Mondays, about 7:30 AM, when anything is overdue or due soon</td><td>Yes</td></tr>
-<tr><td>Settings changed</td><td>Any change to the manager's send mode or notices</td><td>No (audit trail)</td></tr>
+<tr><td>Weekly roll-up</td><td>Mondays, about 7:30 AM, when anything is overdue or due soon. Sorted by due date.</td><td>Yes</td></tr>
 <tr><td>HR check-in</td><td>HR ticks Remind Manager</td><td>No</td></tr>
+<tr><td>Settings changed</td><td>Any change to your send mode or notices</td><td>No (audit trail)</td></tr>
 </tbody>
 </table>
 </div>
@@ -63,13 +103,28 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 
 <details class="accordion"> <summary>Emails to HR</summary> <div class="accordion-body">
 
+<div class="carousel">
+<figure class="shot">
+  <img src="assets/img/emails/email-missing-details.png" alt="Missing details email to the Case Owner listing what to fill in" loading="lazy">
+  <figcaption>One email per case when details are missing.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/emails/email-role-change-review.png" alt="Role change to review email listing every change" loading="lazy">
+  <figcaption>A role change waiting for approval.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/emails/email-hr-open-items.png" alt="Daily HR open items email with Third Party and Employee tables" loading="lazy">
+  <figcaption>The daily open items.</figcaption>
+</figure>
+</div>
+
 <div class="table-scroll">
 <table>
 <thead><tr><th>Email</th><th>Sent when</th></tr></thead>
 <tbody>
-<tr><td>Daily open items</td><td>7:15 AM, when steps waiting on third parties or employees are open in their current phase</td></tr>
-<tr><td>Missing details</td><td>Once per case, to the Case Owner, when the name, effective date or location is blank. Links to Case Progress.</td></tr>
+<tr><td>Missing details</td><td>Once per case, to the Case Owner, when the name, effective date or location is blank. Lists what's missing and links to Case Progress. The case's requests wait until it's filled in, then go out on their own.</td></tr>
 <tr><td>Role change to review</td><td>A manager files a role change. Nothing starts until HR ticks HR Approved.</td></tr>
+<tr><td>Daily open items</td><td>Every morning at 7:15, when steps waiting on outside teams or employees are open in their current phase</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,6 +144,6 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 
 </div> </details>
 
-<p>Every notice links to the page where you act on it, and to the <a href="guide.html?role=hr&amp;file=guides%2Ffaq.md">FAQ</a>.</p>
+Every notice links to the page where you act on it. Not sure what one means? See the <a href="guide.html?role=hr&amp;file=guides%2Ffaq.md">FAQ</a>.
 
 <div class="callout"><strong>Pilot mode:</strong> during the demo, every email goes to one review inbox and lists who it <em>would</em> have gone to. At go-live, each email goes to its real recipient.</div>
