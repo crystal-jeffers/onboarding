@@ -1,7 +1,5 @@
 # Manager Workspace Tour
 
-What's due for them and what's waiting on you, all in one place. You'll only see your own team's cases.
-
 <div class="callout"><strong>Five minutes a day:</strong> check <strong>Triage</strong> for what's due, clear your <strong>Draft Queue</strong> if you review requests before they send, and use <strong>Quick Deploy</strong> to send anything you want out early.</div>
 
 
@@ -18,10 +16,23 @@ What's due for them and what's waiting on you, all in one place. You'll only see
 
 <details class="accordion"> <summary>Triage</summary> <div class="accordion-body">
 
+<div class="carousel">
 <figure class="shot">
   <img src="assets/img/manager/mgr-triage.png" alt="Manager Triage list of steps due, grouped by person" loading="lazy">
 </figure>
-
+<figure class="shot">
+  <img src="assets/img/manager/mgr-triage-detail.png" alt="Task details." loading="lazy">
+  <figcaption>Task details.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-triage-filter.png" alt="Filter options for the Triage board." loading="lazy">
+  <figcaption>Available filter options.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-triage-filtered.png" alt="Filtered view of the board." loading="lazy">
+  <figcaption>Filtered view.</figcaption>
+</figure>
+  
 - Every open step on your cases, soonest first. The **Case Type** column distinguishes onboarding from a role change or a departure.
 - **Responsible** shows who needs to act (for clarity and helpful nudges).
 - <strong>Mark Complete</strong> when a hands-on step is done.
@@ -37,6 +48,32 @@ There are the two places you can send requests from. In either case, you can ope
 
 - **Quick Deploy:** same basic view, but with the option to send multiple emails at once.
 
+<div class="carousel">
+<figure class="shot">
+  <img src="assets/img/manager/mgr-quick-deploy.png" alt="All outstanding email tasks in Quick Deploy." loading="lazy">
+  <figcaption>All outstanding email tasks in Quick Deploy.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-quick-deploy-detail.png" alt="Quick deploy task details, due dates, etc." loading="lazy">
+  <figcaption>Task details, due dates, etc.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-outlook-draft.png" alt="Quick Deploy on-screen drafting." loading="lazy">
+  <figcaption>On-screen drafting.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-draft-queue.png" alt="Draft Queue page." loading="lazy">
+  <figcaption>Draft Queue kanban board.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-draft-detail.png" alt="Draft Queue record detail." loading="lazy">
+  <figcaption>Draft Queue task details.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-draft-draft.png" alt="Draft Queue on-screen drafting." loading="lazy">
+  <figcaption>Draft Queue on-screen drafting.</figcaption>
+</figure>
+  
 See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-sending-requests.md">Sending Requests</a> for the full walkthrough.
 
 </div> </details>
