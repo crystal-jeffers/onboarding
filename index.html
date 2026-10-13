@@ -3,33 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Southland Onboarding — Choose your role</title>
-<link rel="stylesheet" href="assets/style.css?v=2">
+<title>Employee Lifecycle Guides</title>
+<link rel="stylesheet" href="assets/style.css?v=3">
 </head>
 <body>
 <header class="sticky">
   <div class="top-row">
-    <h1>Southland Onboarding</h1>
+    <h1>Employee Lifecycle</h1>
   </div>
-  <span class="role-tag">Employee Lifecycle</span>
+  <span class="role-tag">Southland Industries</span>
 </header>
 <main>
-  <h2 class="landing-heading">Onboarding, role changes and offboarding</h2>
-  <p class="landing-intro">One system runs every employee change, from the offer letter to the last day. Pick your role to see the guides that matter to you.</p>
-  <p><span class="status-pill">Built · pilot pending</span></p>
+  <section class="home-hero">
+    <h2>Every employee change, from first day to last, in one system.</h2>
+    <p>New hires, role changes and departures each start with one form. The checklist, requests and reminders follow on their own.</p>
+  </section>
 
-  <nav class="role-picker" aria-label="Choose your role">
-    <a class="role-card" href="hr.html">
-      <span class="role-name">HR</span>
-      <span class="role-desc">Start cases, track progress across every team, keep steps moving.</span>
-    </a>
-    <a class="role-card" href="manager.html">
-      <span class="role-name">Hiring Manager</span>
-      <span class="role-desc">See what's due for your people and send requests in one click.</span>
-    </a>
+  <p class="home-label">Open your guides</p>
+  <nav class="home-roles" aria-label="Choose your role">
+    <a href="hr.html">HR</a>
+    <a href="manager.html">Manager</a>
   </nav>
 
-  <p style="margin-top:2rem"><a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md">New here? Start with How It Works →</a></p>
+  <p class="home-label">Start here</p>
+  <ul class="home-links">
+    <li><a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md"><strong>How it works</strong><span>The whole system on one page</span></a></li>
+    <li><a href="guide.html?role=hr&amp;file=guides%2Ftimeline.md"><strong>Timeline</strong><span>What happens when, for each case type</span></a></li>
+    <li><a href="guide.html?role=hr&amp;file=guides%2Ffaq.md"><strong>FAQ</strong><span>Got an email? Find out what to do</span></a></li>
+    <li><a href="guide.html?role=hr&amp;file=guides%2Fdefinitions.md"><strong>Definitions</strong><span>Plain-language meanings of every term</span></a></li>
+  </ul>
+
+  <p class="home-label">Open Airtable</p>
+  <ul class="home-links home-apps">
+    <li><a href="https://airtable.com/appe3ibHthgBJFYUs/pagb67uM6Sj2c2F8r" target="_blank" rel="noopener"><strong>HR Workspace ↗</strong><span>Cases, employees, the Task Library</span></a></li>
+    <li><a href="https://airtable.com/appe3ibHthgBJFYUs/pagBMobE9qylDhqsc" target="_blank" rel="noopener"><strong>Manager Workspace ↗</strong><span>Your team's steps, drafts and settings</span></a></li>
+  </ul>
+  <p class="home-note">Airtable links open in a new tab and need your Airtable login. You'll only see the workspace you've been given access to.</p>
+
+  <p style="margin-top:1.5rem"><span class="status-pill">Built, pilot pending</span></p>
 </main>
 </body>
 </html>
