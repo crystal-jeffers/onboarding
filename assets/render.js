@@ -16,7 +16,14 @@ function renderHub(role) {
   const extras = ROLE_EXTRAS[role] || [];
   extras.forEach(e => {
     const a = document.createElement("a");
-    a.href = "guide.html?role=" + role + "&file=" + encodeURIComponent(e.file);
+    if (e.url) {
+      a.href = e.url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.className = "extra-external";
+    } else {
+      a.href = "guide.html?role=" + role + "&file=" + encodeURIComponent(e.file);
+    }
     a.textContent = e.label;
     extrasRow.appendChild(a);
   });
@@ -114,7 +121,7 @@ async function renderSopPage() {
   document.getElementById("back-link").href = role + ".html";
 
   const entry = SOP_LIBRARY.find(s => s.file === file) ||
-                Object.values(ROLE_EXTRAS).flat().find(e => e.file === file);
+                Object.values(ROLE_EXTRAS).flat().find(e => e.file && e.file === file);
 
   if (!entry) {
     contentDiv.innerHTML = "<p>Guide not found.</p>";
