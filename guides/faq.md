@@ -1,8 +1,8 @@
 # FAQ: What Is This Email and What Do I Do?
 
-Short answers to the questions people ask most, plus where each piece of information comes from. If an email sent you here, find its title below.
+Short answers to the questions people ask most, plus where each piece of information comes from. If an email sent you here, find its title below. New to the terms? See <a href="guide.html?role=hr&amp;file=guides%2Fdefinitions.md">Definitions</a>.
 
-<div class="callout"><strong>The one-line version:</strong> HR starts a case, the system builds the checklist and sends the requests, and you only hear from it when something needs <em>you</em>. Every email says what to do and links to the page where you do it.</div>
+<div class="callout"><strong>TLDR:</strong> HR starts a case, the system builds the checklist and sends the requests, and you only hear from it when something needs <em>you</em>. Every email says what to do and links to the page where you do it.</div>
 
 <details class="accordion"> <summary>"Missing details": a case can't move forward</summary> <div class="accordion-body">
 
@@ -17,7 +17,8 @@ Short answers to the questions people ask most, plus where each piece of informa
 2. Open the case and fill in what the email lists under **Missing**.
 3. That's it. Everything that was waiting goes out on its own, and nobody needs to resubmit anything.
 
-**Not your case anymore?** Change **Case Owner** on the case to the right person. Future notices go to them.
+**Not your case anymore?** 
+Change **Case Owner** on the case to the right person. Future notices go to them.
 
 </div> </details>
 
@@ -94,7 +95,8 @@ Do what it says, then tick **Mark Complete**.</div>
 </table>
 </div>
 
-**Rule of thumb:** if it's about *who the person is* (name, role, pay, union), HR owns it. If it's about *day-to-day crew scheduling*, the service manager owns it.
+<div class="callout">
+<strong>Rule of thumb:</strong> if it's about *who the person is* (name, role, pay, union), HR owns it. If it's about *day-to-day crew scheduling*, the service manager owns it.</div>
 
 </div> </details>
 
@@ -103,14 +105,16 @@ Do what it says, then tick **Mark Complete**.</div>
 Managers can turn off most notices on <a href="guide.html?role=manager&amp;file=guides%2Fmanager-email-settings.md">Email Settings</a>. The steps still happen and still show on your pages. Two notices always stay on: the settings-changed confirmation and HR check-ins.
 
 The system is built to send one email per thing you need to do:
-- missing details are reported once per case, not once per request;
-- a new email step doesn't also send a "new step" notice;
-- the Monday roll-up gathers everything due into one email.
+- missing details are reported once per case, not once per request
+- a new email step doesn't also send a "new step" notice
+- the Monday roll-up groups all due tasks into one email
 
 </div> </details>
 
 <details class="accordion"> <summary>Something looks wrong. Who do I ask?</summary> <div class="accordion-body">
 
-Reply to the email. It goes back to the case manager or HR. For anything about the employee's details, contact the **Case Owner** shown on the case. For how the system works, see <a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md">How It Works</a>.
+Reply to the email. It goes back to the case manager or HR. For anything about the employee's details, contact the **Case Owner**. 
+
+For how the system works, see <a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md">How It Works</a>.
 
 </div> </details>
