@@ -81,15 +81,15 @@ Every step belongs to a phase. The due date comes from the case's key date.
 
 <details class="accordion"> <summary>Built-in safeguards</summary> <div class="accordion-body">
 
-<div class="numbered-group">**Nothing sends without the facts.** If automated emails are missing an employee's name, date, location, or its prerequisite isn't done, it waits and tells the manager exactly what to fix. Once that's fixed, it sends by itself.</div>
+<div class="numbered-group"><strong>Nothing sends without the facts.</strong> If automated emails are missing an employee's name, date, location, or its prerequisite isn't done, it waits and tells the manager exactly what to fix. Once that's fixed, it sends by itself.</div>
 
-<div class="numbered-group">**Sensitive materials are HITL-managed.** Even if Fully Automated preferences are set, sensitive material such asinvoluntary exit coordination, emails to the union hall, etc, are drafted manual review and approval.</div>
+<div class="numbered-group"><strong>Sensitive materials are HITL-managed.</strong> Even if Fully Automated preferences are set, sensitive material such asinvoluntary exit coordination, emails to the union hall, etc, are drafted manual review and approval.</div>
 
-<div class="numbered-group">**Departure details stay private.** HR's separation notes never appear in an email or on a manager's page.</div>
+<div class="numbered-group"><strong>Departure details stay private.</strong> HR's separation notes never appear in an email or on a manager's page.</div>
 
-<div class="numbered-group">**No duplicates.** Each request only sends once, and each unlocked step is created once, even if someone re-ticks a box.</div>
+<div class="numbered-group"><strong>No duplicates.</strong> Each request only sends once, and each unlocked step is created once, even if someone re-ticks a box.</div>
 
-<div class="numbered-group">**Manager-specific access.** Each manager sees only their own cases.</div>
+<div class="numbered-group"><strong>Manager-specific access.</strong> Each manager sees only their own cases.</div>
 
 </div> </details>
 
@@ -99,9 +99,9 @@ Every step belongs to a phase. The due date comes from the case's key date.
 <table>
 <thead><tr><th>Who</th><th>Where</th><th>For</th></tr></thead>
 <tbody>
-<tr><td>HR</td><td>HR Workspace</td><td>Starting cases, tracking every case, nudging managers, editing the step library</td></tr>
-<tr><td>Department managers</td><td>Manager Workspace</td><td>Their own cases: what's due, sending requests, email settings</td></tr>
-<tr><td>IT, Safety, Fleet, Facilities, Accounting, union hall</td><td>Their own inbox</td><td>They receive clear, complete requests. No new system to learn.</td></tr>
+<tr><td>HR</td><td>HR Workspace</td><td>Starting and tracking cases, nudging managers, editing the step library</td></tr>
+<tr><td>Department managers</td><td>Manager Workspace</td><td>Their cases: what's due, sending requests, email settings</td></tr>
+<tr><td>IT, Safety, Fleet, Facilities, Accounting, union hall</td><td>Their own inbox</td><td>They receive clear, complete requests. No new system to learn</td></tr>
 <tr><td>Service Supervisors</td><td><a href="https://crystal-jeffers.github.io/start-up-procedures/supervisor.html">Service Workspace</a></td><td>New field hires appear on the dispatch calendar automatically</td></tr>
 </tbody>
 </table>
