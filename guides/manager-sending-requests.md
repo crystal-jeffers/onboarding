@@ -84,7 +84,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
 
 <details class="accordion"> <summary>After it's sent</summary> <div class="accordion-body">
 
-- Requests that need confirmation (laptop delivered, badge issued) move to **Follow Up**. Tick **Mark Complete** once it's confirmed.
+- Requests that need a next step (laptop delivered, fob handed over, policy signed) move to **Follow Up**. The step's **Follow-Up Instructions** say exactly what's left. Tick **Mark Complete** once it's done.
 - Everything else completes as soon as it's sent.
 - Some steps unlock the next one. For example, submitting the Local 393 dispatch form unlocks the dispatch request, and you'll get a notice when it appears.
 
