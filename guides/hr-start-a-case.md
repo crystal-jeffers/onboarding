@@ -2,6 +2,8 @@
 
 Every onboarding, role change and departure starts with one form. Fill it in, and the checklist, requests and calendar updates follow on their own.
 
+<div class="callout"><strong>You become the Case Owner</strong> of every case you submit. If a request is missing the employee's name, effective date or location, you get one email listing what to fill in. To hand a case to someone else, change <strong>Case Owner</strong> on it.</div>
+
 <div class="callout"><strong>Rule of thumb:</strong> submit the form as soon as the decision is made: when the offer is accepted, the change is approved, or notice is given. The earlier the case exists, the more lead time IT, Safety and Fleet get.</div>
 
 <details class="accordion"> <summary>New hire (New Hire Kickoff form)</summary> <div class="accordion-body">
@@ -46,6 +48,8 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
   <figcaption>Role Change form. Only fill in what's changing.</figcaption>
 </figure>
 
+<p>The <strong>hiring manager</strong> files role changes; HR approves them.</p>
+
 <ol class="chunked-list">
 <li>Pick the <strong>Employee</strong>. The list shows each current employee once, with today's details.</li>
 <li>Enter the <strong>Effective Date</strong>: the day the change takes effect.</li>
@@ -58,6 +62,7 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
 <ol>
 <li>The person's current details are copied onto the case, so nobody re-types them.</li>
 <li>The system compares new against current and works out what changed.</li>
+<li><strong>HR gets a "Role change to review" email.</strong> Check the case and tick <strong>HR Approved</strong>. Nothing starts until you do.</li>
 <li>Every role change gets the core steps (HR record, payroll, system access). Each change adds only its own steps: a new location adds building access, a new local adds the union transfer notice, a new manager adds the handoff meeting.</li>
 <li>On the effective date, their Employees record (and Crew record, for field staff) updates by itself, so the dispatch calendar, holidays and colors follow.</li>
 </ol>
