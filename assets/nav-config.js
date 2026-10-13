@@ -20,6 +20,14 @@ const SOP_LIBRARY = [
     featured: ["hr", "manager"]
   },
 
+  {
+    id: "faq",
+    title: "FAQ: What Is This Email and What Do I Do?",
+    file: "guides/faq.md",
+    roles: ["hr", "manager"],
+    featured: ["hr", "manager"]
+  },
+
   /* ---------- HR ---------- */
   {
     id: "start-a-case",
