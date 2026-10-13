@@ -9,7 +9,8 @@ Short answers to the questions people ask most, plus where each piece of informa
 
 **Who gets it:** the **Case Owner** (usually the person who submitted the form).
 
-**What it means:** a request needs an employee's name, effective date, location, etc. and one of them is blank on the case. Every request on that case is on hold until it's filled in. You get **one** email per case, not one per request.
+<div class="numbered-group">
+<strong>What it means:</strong> a request needs an employee's name, effective date, location, etc. and one of them is blank on the case. Every request on that case is on hold until it's filled in. You get <strong>one</strong> email per case, not one per request.</div>
 
 **What to do:**
 1. Click **Open Case Progress** in the email.
@@ -24,7 +25,8 @@ Short answers to the questions people ask most, plus where each piece of informa
 
 **Who gets it:** the manager.
 
-**What it means:** some requests can only go out after another step is done. For example, the Local 393 dispatch request waits until the dispatch form has been submitted. The email names the step to finish.
+<div class="numbered-group">
+<strong>What it means:</strong> some requests can only go out after another step is done. For example, the Local 393 dispatch request waits until the dispatch form has been submitted. The email names the step to finish.</div>
 
 **What to do:** click **Open Manager Triage**, find the step it names and tick **Mark Complete** once it's done. The waiting request then sends, or drafts for your review, on its own.
 
@@ -36,7 +38,10 @@ Short answers to the questions people ask most, plus where each piece of informa
 
 **Who gets it:** managers set to **Review &amp; Send**, and all users for sensitive material requests (these are always manually reviewed and approved).
 
-**What to do:** open the **Draft Queue**, check the draft, and either click **Open in Outlook**, send it and tick **Sent from Outlook**, or tick **Send For Me**. See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-sending-requests.md">Sending Requests</a>.
+<div class="numbered-group">
+<strong>What to do:</strong> open the <strong>Draft Queue</strong>, check the draft, and either click <strong>Open in Outlook</strong>, send it and tick <strong>Sent from Outlook</strong>, or tick <strong>Send For Me</strong>.</div> 
+  
+See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-sending-requests.md">Sending Requests</a>.
 
 </div> </details>
 
@@ -52,20 +57,22 @@ When the new step is an email request, you don't get a separate "new step" notic
 
 Some requests aren't finished when the email goes out. A laptop still has to arrive; a vehicle policy still needs the employee's signature. Those steps move to **Follow Up** instead of Complete, and the **Follow-Up Instructions** on the step say exactly what's left.
 
-Do what it says, then tick **Mark Complete**.
+<div class="numbered-group">
+Do what it says, then tick **Mark Complete**.</div>
 
 </div> </details>
 
 <details class="accordion"> <summary>Role changes: who does what?</summary> <div class="accordion-body">
-
-<ol class="chunked-list">
+  
+<ol>
 <li><strong>The manager files</strong> the Role Change form. Only fill in what's changing; blank fields keep the employee's current details.</li>
 <li><strong>HR gets a "Role change to review" email</strong> listing every change.</li>
 <li><strong>HR checks it and ticks HR Approved</strong> on the case. Until then nothing happens: no steps, no requests, no record changes.</li>
 <li>After approval, the steps are created (payroll, IT access, union transfer and so on, only for what's changing). On the effective date, the employee's record and crew record update themselves.</li>
 </ol>
 
-**Is a level change a role change?** Yes. A change of level, union local or team usually changes pay, dues or the labor agreement, so it goes through the Role Change form and HR approval. A service manager doesn't edit those directly.
+<div class="numbered-group">
+<strong>Is a level change a role change?</strong> Yes. A change of level, union local or team usually changes pay, dues or the labor agreement, so it goes through the Role Change form and HR approval. A service manager doesn't edit those directly.</div>
 
 </div> </details>
 
@@ -75,10 +82,10 @@ Do what it says, then tick **Mark Complete**.
 <table>
 <thead><tr><th>Information</th><th>Who owns it</th><th>Where it's entered</th><th>What it's used for</th></tr></thead>
 <tbody>
-<tr><td>Name, effective date, location</td><td>HR (Case Owner)</td><td>The intake form, then the case</td><td>Every request email and every due date</td></tr>
+<tr><td>Name, effective date, location</td><td>Case Owner</td><td>The intake form, then the case</td><td>Every request email and every due date</td></tr>
 <tr><td>Role, department, manager</td><td>HR</td><td>The intake form. Later changes go through the Role Change form.</td><td>Which steps apply, and who gets the manager notices</td></tr>
 <tr><td>Union local</td><td>HR (employee record)</td><td>The intake form. Changes go through the Role Change form.</td><td>Union steps, union holidays on the calendar, dispatch bar color</td></tr>
-<tr><td>Team and level</td><td>HR, through a Role Change</td><td>The intake form, then the Role Change form</td><td>The crew calendar and which holiday agreement applies</td></tr>
+<tr><td>Team and level</td><td>HR (through a Role Change)</td><td>The intake form, then the Role Change form</td><td>The crew calendar and which holiday agreement applies</td></tr>
 <tr><td>Crew details (email, scheduling, notes)</td><td>Service manager</td><td>The Crew page in the Service Workspace</td><td>Scheduling and the Friday schedule email</td></tr>
 <tr><td>Team contacts (IT, Safety, Fleet…)</td><td>HR</td><td>The Contacts list</td><td>Who each request is sent to</td></tr>
 <tr><td>Email wording and steps</td><td>HR</td><td>The Task Library</td><td>Every case's checklist and request emails</td></tr>
