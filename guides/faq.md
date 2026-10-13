@@ -6,9 +6,10 @@ Short answers to the questions people ask most, plus where each piece of informa
 
 <details class="accordion"> <summary>"Missing details": a case can't move forward</summary> <div class="accordion-body">
 
-**Who gets it:** the case's **Case Owner**, usually the HR person who submitted the form.
 
-**What it means:** a request needs the employee's name, effective date or location, and one of them is blank on the case. Every request on that case is on hold until it's filled in. You get **one** email per case, not one per request.
+**Who gets it:** the **Case Owner** (usually the person who submitted the form).
+
+**What it means:** a request needs an employee's name, effective date, location, etc. and one of them is blank on the case. Every request on that case is on hold until it's filled in. You get **one** email per case, not one per request.
 
 **What to do:**
 1. Click **Open Case Progress** in the email.
@@ -21,7 +22,7 @@ Short answers to the questions people ask most, plus where each piece of informa
 
 <details class="accordion"> <summary>"Waiting on a step": a request is held up by another step</summary> <div class="accordion-body">
 
-**Who gets it:** the hiring manager.
+**Who gets it:** the manager.
 
 **What it means:** some requests can only go out after another step is done. For example, the Local 393 dispatch request waits until the dispatch form has been submitted. The email names the step to finish.
 
@@ -33,7 +34,7 @@ Short answers to the questions people ask most, plus where each piece of informa
 
 <details class="accordion"> <summary>"Draft ready for review"</summary> <div class="accordion-body">
 
-**Who gets it:** managers set to **Review &amp; Send**, and anyone whose request goes to the union hall or is part of an involuntary departure (those are always reviewed).
+**Who gets it:** managers set to **Review &amp; Send**, and all users for sensitive material requests (these are always manually reviewed and approved).
 
 **What to do:** open the **Draft Queue**, check the draft, and either click **Open in Outlook**, send it and tick **Sent from Outlook**, or tick **Send For Me**. See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-sending-requests.md">Sending Requests</a>.
 
@@ -103,6 +104,6 @@ The system is built to send one email per thing you need to do:
 
 <details class="accordion"> <summary>Something looks wrong. Who do I ask?</summary> <div class="accordion-body">
 
-Reply to the email; it goes back to the case's manager or HR. For anything about the employee's details, contact the **Case Owner** shown on the case. For how the system works, see <a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md">How It Works</a>.
+Reply to the email. It goes back to the case manager or HR. For anything about the employee's details, contact the **Case Owner** shown on the case. For how the system works, see <a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md">How It Works</a>.
 
 </div> </details>
