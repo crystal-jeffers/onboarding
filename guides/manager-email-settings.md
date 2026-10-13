@@ -1,4 +1,4 @@
-# Your Email Settings
+# Email Settings
 
 You decide how your requests go out and which notices you get. Only you can see and change your own settings, and every change is confirmed by email.
 
@@ -6,18 +6,18 @@ You decide how your requests go out and which notices you get. Only you can see 
   <img src="assets/img/manager/mgr-email-settings.png" alt="Email Settings page with send preference and notification checkboxes" loading="lazy">
 </figure>
 
-<details class="accordion"> <summary>How requests are sent</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Send Preferences</summary> <div class="accordion-body">
 
-- **Fully Automated:** requests send in your name when they're due.
-- **Review &amp; Send:** requests are drafted into your Draft Queue for you to check first.
+- **Fully Automated:** emails auto-send in your name when due.
+- **Review &amp; Send:** drafts fill the Draft Queue for manual review and send.
 
 See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-sending-requests.md">Sending Requests</a>.
 
 </div> </details>
 
-<details class="accordion"> <summary>Notices you can turn on or off</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Optional Notices</summary> <div class="accordion-body">
 
-All of these start **on**. Turning one off only stops the email; the work still happens and still shows on your pages.
+All of these start **on**. Turning one off only stops the email. The work still happens and still shows on your pages.
 
 <div class="table-scroll">
 <table>
@@ -26,7 +26,7 @@ All of these start **on**. Turning one off only stops the email; the work still 
 <tr><td>New case on my team</td><td>HR starts an onboarding, role change or departure for someone on your team.</td></tr>
 <tr><td>Draft ready for my review</td><td>A request is drafted into your Draft Queue.</td></tr>
 <tr><td>New task unlocked</td><td>A hands-on step that was waiting on another one becomes available. (Email steps skip this; their own email tells you.)</td></tr>
-<tr><td>Email blocked by missing info</td><td>A request is waiting on another step. The email names the step and links to Triage. (Missing employee details go to HR instead.)</td></tr>
+<tr><td>Email blocked by missing info</td><td>A request is waiting on another step. The email names the step and links to Triage. (Missing employee details go to HR.)</td></tr>
 <tr><td>Case complete</td><td>Every step on a case is done.</td></tr>
 <tr><td>Weekly roll-up (Mondays)</td><td>Each Monday: one email with everything overdue or due soon across your cases.</td></tr>
 </tbody>
