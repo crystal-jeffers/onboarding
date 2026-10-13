@@ -93,18 +93,19 @@ Every step belongs to a phase. The due date comes from the case's key date.
 
 </div> </details>
 
-<details class="accordion"> <summary>Workspaces</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Workspaces> <div class="accordion-body">
 
 <div class="table-scroll">
 <table>
 <thead><tr><th>Who</th><th>Where</th><th>For</th></tr></thead>
 <tbody>
-<tr><td>HR</td><td>HR Workspace</td><td>Starting and tracking cases, nudging managers, editing the step library</td></tr>
-<tr><td>Department managers</td><td>Manager Workspace</td><td>Their cases: what's due, sending requests, email settings</td></tr>
-<tr><td>IT, Safety, Fleet, Facilities, Accounting, union hall</td><td>Their own inbox</td><td>They receive clear, complete requests. No new system to learn</td></tr>
-<tr><td>Service Supervisors</td><td><a href="https://crystal-jeffers.github.io/start-up-procedures/supervisor.html">Service Workspace</a></td><td>New field hires appear on the dispatch calendar automatically</td></tr>
+<tr><td>HR</td><td><a href="https://airtable.com/appe3ibHthgBJFYUs/pagb67uM6Sj2c2F8r" target="_blank" rel="noopener">HR Workspace ↗</a><br><a href="guide.html?role=hr&amp;file=guides%2Fhr-workspace.md">Tour</a></td><td>Starting cases, approving role changes, tracking every case, nudging managers, editing the Task Library</td></tr>
+<tr><td>Managers</td><td><a href="https://airtable.com/appe3ibHthgBJFYUs/pagBMobE9qylDhqsc" target="_blank" rel="noopener">Manager Workspace ↗</a><br><a href="guide.html?role=manager&amp;file=guides%2Fmanager-workspace.md">Tour</a></td><td>Their own cases: what's due, sending requests, filing role changes, email settings</td></tr>
+<tr><td>Supervisors</td><td><a href="https://airtable.com/appe3ibHthgBJFYUs/pagJFZqMkCM45r6QJ" target="_blank" rel="noopener">Service Workspace ↗</a><br><a href="https://crystal-jeffers.github.io/start-up-procedures/supervisor.html">Guides</a></td><td>New field hires appear on the dispatch calendar automatically</td></tr>
+<tr><td>IT, Safety, Fleet, Facilities, Accounting, union hall</td><td>Their own inbox</td><td>They receive clear, complete requests. No new system to learn.</td></tr>
 </tbody>
 </table>
 </div>
 
 </div> </details>
+
