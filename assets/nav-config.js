@@ -83,9 +83,16 @@ const SOP_LIBRARY = [
 
   /* ---------- Reference ---------- */
   {
-    id: "steps",
-    title: "Every Step, by Case Type",
-    file: "guides/steps.md",
+    id: "timeline",
+    title: "Timeline: What Happens When",
+    file: "guides/timeline.md",
+    roles: ["hr", "manager"],
+    featured: ["hr", "manager"]
+  },
+  {
+    id: "definitions",
+    title: "Definitions",
+    file: "guides/definitions.md",
     roles: ["hr", "manager"],
     featured: []
   },
@@ -108,15 +115,18 @@ const SOP_LIBRARY = [
 // Full label shown in the sticky header for each role
 const ROLE_LABELS = {
   hr: "HR",
-  manager: "Hiring Manager"
+  manager: "Manager"
 };
 
-// Extra shortcut buttons that appear only in a given role's header
+// Extra shortcut buttons that appear only in a given role's header.
+// Use file: for a guide, or url: for an outside link (opens in a new tab).
 const ROLE_EXTRAS = {
   hr: [
-    { label: "Start a case", file: "guides/hr-start-a-case.md" }
+    { label: "Start a case", file: "guides/hr-start-a-case.md" },
+    { label: "Open HR Workspace ↗", url: "https://airtable.com/appe3ibHthgBJFYUs/pagb67uM6Sj2c2F8r" }
   ],
   manager: [
-    { label: "Send requests", file: "guides/manager-sending-requests.md" }
+    { label: "Send requests", file: "guides/manager-sending-requests.md" },
+    { label: "Open Manager Workspace ↗", url: "https://airtable.com/appe3ibHthgBJFYUs/pagBMobE9qylDhqsc" }
   ]
 };
