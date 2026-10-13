@@ -11,7 +11,7 @@ Now HR fills in one form, and the system builds the right checklist for that per
   <figcaption>HR Home Dashboard: every open case, and what's overdue, at a glance.</figcaption>
 </figure>
 
-<details class="accordion"> <summary>The flow, start to finish</summary> <div class="accordion-body">
+<details class="accordion"> <summary>HR Workflow</summary> <div class="accordion-body">
 
 <div class="mermaid">
 flowchart TD
@@ -43,7 +43,7 @@ flowchart TD
 
 </div> </details>
 
-<details class="accordion"> <summary>Three case types, one engine</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Case Types</summary> <div class="accordion-body">
 
 <div class="table-scroll">
 <table>
@@ -93,7 +93,7 @@ Every step belongs to a phase. The due date comes from the case's key date.
 
 </div> </details>
 
-<details class="accordion"> <summary>Where people work</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Workspaces</summary> <div class="accordion-body">
 
 <div class="table-scroll">
 <table>
