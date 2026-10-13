@@ -25,8 +25,8 @@ All of these start **on**. Turning one off only stops the email; the work still 
 <tbody>
 <tr><td>New case on my team</td><td>HR starts an onboarding, role change or departure for someone on your team.</td></tr>
 <tr><td>Draft ready for my review</td><td>A request is drafted into your Draft Queue.</td></tr>
-<tr><td>New task unlocked</td><td>A step that was waiting on another one becomes available.</td></tr>
-<tr><td>Email blocked by missing info</td><td>A request can't send yet. The email says exactly what to fix.</td></tr>
+<tr><td>New task unlocked</td><td>A hands-on step that was waiting on another one becomes available. (Email steps skip this; their own email tells you.)</td></tr>
+<tr><td>Email blocked by missing info</td><td>A request is waiting on another step. The email names the step and links to Triage. (Missing employee details go to HR instead.)</td></tr>
 <tr><td>Case complete</td><td>Every step on a case is done.</td></tr>
 <tr><td>Weekly roll-up (Mondays)</td><td>Each Monday: one email with everything overdue or due soon across your cases.</td></tr>
 </tbody>
