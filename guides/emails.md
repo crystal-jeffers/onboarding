@@ -14,6 +14,7 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 <thead><tr><th>Email</th><th>Sent when</th><th>Notes</th></tr></thead>
 <tbody>
 <tr><td>Request (laptop, phone, building access, safety, vehicle policy, union dispatch…)</td><td>3 days before the step is due, or right away from Quick Deploy</td><td>Fully Automated managers: sent directly. Review &amp; Send managers, union halls and involuntary exits: drafted for review first.</td></tr>
+<tr><td>Action needed (owner notice)</td><td>When a step owned by a team without system access becomes current (for example, the office administrator's welcome email), or when a manager or HR assigns a step to someone in Contacts</td><td>Sent once per step. Comes from, and replies go to, whoever confirms the step: HR or the case manager. Can't be turned off.</td></tr>
 </tbody>
 </table>
 </div>
