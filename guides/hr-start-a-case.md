@@ -21,8 +21,10 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
 <tr><td>Effective Date</td><td>Their first day. Every due date counts from it.</td></tr>
 <tr><td>Manager</td><td>Requests go out in this manager's name, and replies come back to them.</td></tr>
 <tr><td>Union Affiliation <em>(Service only)</em></td><td>Adds the right union dispatch steps and, later, the right holiday schedule.</td></tr>
-<tr><td>Team and Level <em>(Service and Controls)</em></td><td>Field hires get a dispatch calendar record, so supervisors can book their first week.</td></tr>
-<tr><td>DOB</td><td>Needed for Pcard setup.</td></tr>
+<tr><td>Team and Level <em>(Service and Controls)</em></td><td>Field hires get a dispatch calendar record, so supervisors can book their first week. Foreman level and above also get the Bluebeam request.</td></tr>
+<tr><td>Company Vehicle</td><td>Yes adds the vehicle steps (MVR and vehicle policy, fleet approval, vehicle tools, DOT medical card, Day 1 vehicle pickup) for any role. Blank or No skips them.</td></tr>
+<tr><td>Additional Software</td><td>Tick only for an exception. Foreman and above, and design and detailing roles, get the Bluebeam request automatically.</td></tr>
+<tr><td>DOB <em>(field crew)</em></td><td>Needed for the Home Depot card. It goes in that one request only, and the request waits until it's filled in.</td></tr>
 <tr><td>Special Notes</td><td>Anything unusual ("starts at the Sacramento shop for week one"). It becomes its own task on the manager's list.</td></tr>
 </tbody>
 </table>
@@ -53,7 +55,7 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
 <ol class="chunked-list">
 <li>Pick the <strong>Employee</strong>. The list shows each current employee once, with today's details.</li>
 <li>Enter the <strong>Effective Date</strong>: the day the change takes effect.</li>
-<li>Fill in <strong>only what's changing</strong>: Role, Department, Manager, Location, Team, Level or Union Local. Leave the rest blank, and their current details carry over.</li>
+<li>Fill in <strong>only what's changing</strong>: Role, Department, Manager, Location, Team, Level, Union Local or Company Vehicle (Yes if they're getting one, No if they're giving one up). Leave the rest blank, and their current details carry over.</li>
 <li>Tick <strong>Pay</strong> or <strong>Vehicle Eligibility</strong> under What's Changing if those change. Everything else is detected automatically.</li>
 </ol>
 
