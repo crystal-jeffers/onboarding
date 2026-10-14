@@ -45,7 +45,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
 <li>Click <strong>Open in Outlook</strong>.</li>
 <li>A new email opens with To, CC, subject and body filled in.</li>
 <li>Edit it if you like, then send it from Outlook as normal.</li>
-<li>Back in Airtable, <strong>Mark Complete</strong>. (Follow Up tasks auto-populate, if applicable.)</li>
+<li>Back in Airtable, <strong>Mark Complete</strong>. If someone else has to deliver it, the completion step appears next.</li>
 </ol>
 </div>
 
@@ -89,9 +89,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
 <details class="accordion"> <summary>After it's sent</summary> <div class="accordion-body">
 
 <div class="numbered-group">
-Requests that need a next step (laptop delivered, fob handed over, policy signed) move to <strong>Follow Up</strong>. The step's <strong>Follow-Up Instructions</strong> say exactly what's left. <strong>Mark Complete</strong> once it's done.</div>
-<div class="numbered-group">
-Everything else completes as soon as it's sent.</div>
+A request is done once it's sent. If someone else has to deliver (laptop ready, fob issued, policy signed), a <strong>completion step</strong> appears on your Triage with what to check. Tick it once they confirm.</div>
 <div class="numbered-group">
 Some steps unlock the next one. For example, submitting the Local 393 dispatch form unlocks the dispatch request, and you'll get a notice when it appears.</div>
 
