@@ -43,7 +43,7 @@ The task's **Action Needed** field says exactly what to fix. Once it's fixed, th
 
 <details class="accordion"> <summary>Closing the loop</summary> <div class="accordion-body">
 
-- Steps that need confirmation (a laptop delivered, a badge issued) move to **Follow Up** after the request goes out. Tick **Mark Complete** once it's confirmed.
+- When a request is done, its completion step appears (badge deactivated, payroll updated). If **Confirmed By** is HR, it shows on your daily Open Items email; tick **Mark Complete** once the team confirms.
 - A case closes itself when every step is complete. Onboardings, role changes and offboardings each get their own closing note (no "Congrats!" on a departure).
 
 </div> </details>
