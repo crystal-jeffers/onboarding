@@ -18,11 +18,11 @@
 
 <div class="carousel">
 <figure class="shot">
-  <img src="assets/img/manager/mgr-triage.png" alt="Manager Triage list of steps due, grouped by person" loading="lazy">
+  <img src="assets/img/manager/mgr-triage.png" alt="Manager Triage shows a user-specific list of tasks. Tasks owned by new hires, HR, and Third Parties do not show up here." loading="lazy">
 </figure>
 <figure class="shot">
-  <img src="assets/img/manager/mgr-triage-detail.png" alt="Task details." loading="lazy">
-  <figcaption>Task details.</figcaption>
+  <img src="assets/img/manager/mgr-triage-detail.png" alt="Task details. The **Case Type** distinguishes onboarding from a role change or a departure." loading="lazy">
+  <figcaption>Task details. The **Case Type** distinguishes onboarding from a role change or a departure.</figcaption>
 </figure>
 <figure class="shot">
   <img src="assets/img/manager/mgr-triage-filter.png" alt="Filter options for the Triage board." loading="lazy">
@@ -32,8 +32,13 @@
   <img src="assets/img/manager/mgr-triage-filtered.png" alt="Filtered view of the board." loading="lazy">
   <figcaption>Filtered view.</figcaption>
 </figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-triage-new.png" alt="Click here to create a new task." loading="lazy">
+  <figcaption>Filtered view.</figcaption>
+</figure>
+
   
-- Every open step on your cases, soonest first. The **Case Type** column distinguishes onboarding from a role change or a departure.
+- Every open step on your cases, soonest first. 
 - **Responsible** shows who needs to act (for clarity and helpful nudges).
 - <strong>Mark Complete</strong> when a hands-on step is done.
 - Adding <strong>Progress Notes</strong> to a step moves it to <strong>In Progress</strong> automatically.
