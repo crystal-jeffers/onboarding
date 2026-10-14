@@ -20,7 +20,7 @@ flowchart TD
   C --> D{Step is due soon}
   D -->|Email step| E[Request sent or drafted<br/>in the manager's name]
   D -->|Hands-on step| F[Shows on the owner's<br/>to-do list]
-  E --> G[Follow up if needed]
+  E --> G[Completion step appears<br/>ticked when the team confirms]
   F --> H[Marked complete]
   G --> H
   H --> I{All steps done?}
