@@ -29,17 +29,19 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <div class="tl-when"><span class="tl-day">Before day 1</span><span class="tl-sub">due the day before, or a week after the case opens, whichever is first</span></div>
 <div class="tl-body">
 <h3>Get everything ready</h3>
-<p><span class="who who-sys">System</span> sends the requests 3 days before they're due: laptop, phone, building access, safety onboarding, vehicle policy, union dispatch. Review &amp; Send managers get drafts instead.</p>
+<p><span class="who who-sys">System</span> sends the requests 3 days before they're due: laptop, phone, building access, safety onboarding, union dispatch, and the vehicle policy if the hire gets a company vehicle. Review &amp; Send managers get drafts instead.</p>
+<p><span class="who who-hr">HR</span> sends the forms, orders the background check and schedules the drug screen.</p>
 <p><span class="who who-mgr">Manager</span> reviews drafts if they've chosen to, and submits the Local 393 dispatch form for 393 hires.</p>
-<p><span class="who who-emp">Employee</span> completes portal paperwork, I-9, tax forms and direct deposit.</p>
-<p><span class="who who-team">Other teams</span> fulfil the requests. Anything that needs a next step (like handing over a fob) moves to Follow Up.</p>
+<p><span class="who who-emp">Employee</span> completes portal paperwork, tax forms, direct deposit and the drug screen.</p>
+<p><span class="who who-team">Other teams</span> fulfil the requests. Each request has a matching completion step (laptop ready, fob issued) that appears once the request is done; whoever asked ticks it when the team confirms. The office administrator gets an "Action needed" email to send the first-day welcome.</p>
 </div>
 </li>
 <li class="tl-stop tl-key-stop">
 <div class="tl-when"><span class="tl-day">Day 1</span><span class="tl-sub">the first day</span></div>
 <div class="tl-body">
 <h3>First day</h3>
-<p><span class="who who-mgr">Manager</span> runs Day 1 training and hands over equipment, closing the follow-ups.</p>
+<p><span class="who who-mgr">Manager</span> runs Day 1 training and hands over equipment, ticking off any completion steps still open.</p>
+<p><span class="who who-emp">Employee</span> completes I-9 Section 1. <span class="who who-hr">HR</span> verifies the documents and opens the E-Verify case within 3 business days.</p>
 <p><span class="who who-sys">System</span> flags anything from before day 1 that's still open as overdue.</p>
 </div>
 </li>
@@ -123,7 +125,7 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <h3>Plan the exit</h3>
 <p><span class="who who-hr">HR</span> confirms the separation details.</p>
 <p><span class="who who-mgr">Manager</span> puts together the knowledge transfer and handoff plan.</p>
-<p><span class="who who-team">Other teams</span> schedule access removal and the vehicle, fuel card and toll tag return, cancel the Pcard, and send the union termination notice for union staff.</p>
+<p><span class="who who-team">Other teams</span> schedule access removal and the vehicle, fuel card and toll tag return, cancel the Pcard, and send the union termination notice for union staff. The vehicle return is skipped if the employee record says they have no company vehicle.</p>
 </div>
 </li>
 <li class="tl-stop tl-key-stop">
@@ -161,6 +163,7 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <li><strong>Every morning at 7:15</strong>, HR gets the open items waiting on employees and outside teams.</li>
 <li><strong>Every Monday</strong>, each manager gets one roll-up of everything overdue or due soon.</li>
 <li><strong>Anytime details are missing</strong>, the Case Owner gets one email saying what to fill in.</li>
+<li><strong>When a request is done</strong>, its completion step appears straight away, owned by whoever delivers.</li>
 </ul>
 </div>
 </div>
