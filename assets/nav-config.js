@@ -60,6 +60,13 @@ const SOP_LIBRARY = [
 
   /* ---------- Managers ---------- */
   {
+    id: "manager-checklist",
+    title: "Manager Checklist: New Start-Up Hire",
+    file: "guides/manager-checklist.md",
+    roles: ["manager", "hr"],
+    featured: ["manager"]
+  },
+  {
     id: "manager-workspace",
     title: "Manager Workspace Tour",
     file: "guides/manager-workspace.md",
