@@ -54,12 +54,12 @@ When the new step is an email request, you don't get a separate "new step" notic
 
 </div> </details>
 
-<details class="accordion"> <summary>A step says "Follow Up". What's left to do?</summary> <div class="accordion-body">
+<details class="accordion"> <summary>I sent a request. Why is there a new step for the same thing?</summary> <div class="accordion-body">
 
-Some requests aren't finished when the email goes out. A laptop still has to arrive; a vehicle policy still needs the employee's signature. Those steps move to **Follow Up** instead of Complete, and the **Follow-Up Instructions** on the step say exactly what's left.
+That's the **completion step**. Asking and delivering are two steps with two owners: "Request Laptop" is yours, "Laptop Ready" belongs to IT. The completion step appears as soon as the request is done, so you can see what you're still waiting on.
 
 <div class="numbered-group">
-Do what it says, then tick **Mark Complete**.</div>
+IT, vendors and the employee aren't in the system, so whoever sent the request ticks the completion step (see **Confirmed By**) once they hear it's done.</div>
 
 </div> </details>
 
