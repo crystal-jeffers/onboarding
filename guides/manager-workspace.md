@@ -46,7 +46,7 @@ There are the two places you can send requests from. In either case, you can ope
 
 - **Draft Queue:** all HITL system drafts ready for manual review and approval.
 
-- **Quick Deploy:** same basic view, but with the option to send multiple emails at once.
+- **Quick Deploy:** same view, with the option to send multiple at once.
 
 <div class="carousel">
 <figure class="shot">
@@ -84,13 +84,12 @@ See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-sending-requests.
   <img src="assets/img/manager/mgr-overdue.png" alt="Overdue steps list" loading="lazy">
 </figure>
 
-Everything past due, with how many days late and what's needed to clear it.
+Everything past due, listed with due dates and responsible parties.
 
 </div> </details>
 
 <details class="accordion"> <summary>Email Settings</summary> <div class="accordion-body">
 
-Choose how requests are sent and which notices you get. 
-See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-email-settings.md">Your Email Settings</a>.
+See <a href="guide.html?role=manager&amp;file=guides%2Fmanager-email-settings.md">Your Email Settings</a> to choose how requests are sent and which notices you get. 
 
 </div> </details>
