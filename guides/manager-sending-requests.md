@@ -73,6 +73,10 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
   <img src="assets/img/manager/mgr-draft-detail.png" alt="An editable draft with Send To, CC, subject, body and Send For Me" loading="lazy">
   <figcaption>Edit anything before it goes.</figcaption>
 </figure>
+<figure class="shot">
+  <img src="assets/img/manager/mgr-draft-draft.png" alt="An editable draft with Send To, CC, subject, body and Send For Me" loading="lazy">
+  <figcaption>Edit anything before it goes.</figcaption>
+</figure>
 </div>
 
 <ol class="chunked-list">
