@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Employee Lifecycle Guides</title>
-<link rel="stylesheet" href="assets/style.css?v=4">
+<link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body>
 <header class="sticky">
@@ -15,30 +15,78 @@
 </header>
 <main>
   <section class="home-hero">
-    <h2>Every employee change, from first day to last, in one system.</h2>
-    <p>New hires, role changes and departures each start with one form. The checklist, requests and reminders follow on their own.</p>
+    <h2>From first day to last, every step in one system.</h2>
+    <p>New hires, role changes, and departures each start with one form. The checklist, requests, and reminders follow on their own.</p>
   </section>
 
-  <p class="home-label">Open your guides</p>
-  <nav class="home-roles" aria-label="Choose your role">
-    <a href="hr.html">HR</a>
-    <a href="manager.html">Manager</a>
-  </nav>
-
+  <!-- ===================== GUIDES: binder tabs =====================
+       One tab per role. Each tab's folder holds the same five links, filtered
+       for that role. Without the script, both folders show, one after the
+       other, each with its own heading. -->
   <p class="home-label">Start here</p>
-  <ul class="home-links">
-    <li><a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md"><strong>How it works</strong><span>The whole system on one page</span></a></li>
-    <li><a href="guide.html?role=hr&amp;file=guides%2Ftimeline.md"><strong>Timeline</strong><span>What happens when, for each case type</span></a></li>
-    <li><a href="guide.html?role=hr&amp;file=guides%2Ffaq.md"><strong>FAQ</strong><span>Got an email? Find out what to do</span></a></li>
-    <li><a href="guide.html?role=hr&amp;file=guides%2Fdefinitions.md"><strong>Definitions</strong><span>Plain-language meanings of every term</span></a></li>
-  </ul>
-
-  <p class="home-label">Open Airtable</p>
-  <ul class="home-links home-apps">
-    <li><a href="https://airtable.com/appe3ibHthgBJFYUs/pagb67uM6Sj2c2F8r" target="_blank" rel="noopener"><strong>HR Workspace ↗</strong><span>Cases, employees, the Task Library</span></a></li>
-    <li><a href="https://airtable.com/appe3ibHthgBJFYUs/pagBMobE9qylDhqsc" target="_blank" rel="noopener"><strong>Manager Workspace ↗</strong><span>Your team's steps, drafts and settings</span></a></li>
-  </ul>
+  <div class="binder">
+    <div class="binder-tabs" role="tablist" aria-label="Choose your role">
+      <button type="button" class="binder-tab" role="tab" id="tab-hr" aria-controls="panel-hr" aria-selected="true">HR</button>
+      <button type="button" class="binder-tab" role="tab" id="tab-manager" aria-controls="panel-manager" aria-selected="false" tabindex="-1">Manager</button>
+    </div>
+    <section class="folder-panel" id="panel-hr" role="tabpanel" aria-labelledby="tab-hr" tabindex="0">
+      <h3 class="folder-title">HR</h3>
+      <ul class="folder-links">
+        <li><a href="guide.html?role=hr&amp;file=guides%2Fhow-it-works.md"><strong>How It Works</strong><span>The whole system on one page</span></a></li>
+        <li><a href="guide.html?role=hr&amp;file=guides%2Ftimeline.md"><strong>Timeline</strong><span>What happens when, for each case type</span></a></li>
+        <li><a href="guide.html?role=hr&amp;file=guides%2Ffaq.md"><strong>FAQs</strong><span>Got an email? Find out what to do</span></a></li>
+        <li><a href="guide.html?role=hr&amp;file=guides%2Fdefinitions.md"><strong>Definitions</strong><span>Plain-language meanings of every term</span></a></li>
+        <li class="folder-app"><a href="https://airtable.com/appe3ibHthgBJFYUs/pagb67uM6Sj2c2F8r" target="_blank" rel="noopener"><strong>Open Airtable Workspace ↗</strong><span>Cases, employees, and the Task Library</span></a></li>
+      </ul>
+      <p class="folder-more"><a href="hr.html">See all HR guides &rarr;</a></p>
+    </section>
+    <section class="folder-panel" id="panel-manager" role="tabpanel" aria-labelledby="tab-manager" tabindex="0">
+      <h3 class="folder-title">Manager</h3>
+      <ul class="folder-links">
+        <li><a href="guide.html?role=manager&amp;file=guides%2Fhow-it-works.md"><strong>How It Works</strong><span>The whole system on one page</span></a></li>
+        <li><a href="guide.html?role=manager&amp;file=guides%2Ftimeline.md"><strong>Timeline</strong><span>What happens when, for each case type</span></a></li>
+        <li><a href="guide.html?role=manager&amp;file=guides%2Ffaq.md"><strong>FAQs</strong><span>Got an email? Find out what to do</span></a></li>
+        <li><a href="guide.html?role=manager&amp;file=guides%2Fdefinitions.md"><strong>Definitions</strong><span>Plain-language meanings of every term</span></a></li>
+        <li class="folder-app"><a href="https://airtable.com/appe3ibHthgBJFYUs/pagBMobE9qylDhqsc" target="_blank" rel="noopener"><strong>Open Airtable Workspace ↗</strong><span>Your team's steps, drafts, and settings</span></a></li>
+      </ul>
+      <p class="folder-more"><a href="manager.html">See all Manager guides &rarr;</a></p>
+    </section>
+  </div>
   <p class="home-note">Airtable links open in a new tab and need your Airtable login. You'll only see the workspace you've been given access to.</p>
+
+  <script>
+  /* Binder tabs: click, or use the arrow keys, Home, and End. The chosen tab
+     is kept in the address (#manager) so a link can open straight to it. */
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(".binder-tab"));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute("aria-controls")); });
+    if (!tabs.length) return;
+    document.documentElement.classList.add("tabs-ready");
+    function pick(i, focus) {
+      tabs.forEach(function (t, k) {
+        var on = k === i;
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        panels[k].hidden = !on;
+      });
+      if (focus) tabs[i].focus();
+      if (history.replaceState) history.replaceState(null, "", i === 0 ? location.pathname : "#" + tabs[i].id.replace("tab-", ""));
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { pick(i, false); });
+      t.addEventListener("keydown", function (e) {
+        var n = tabs.length, j = null;
+        if (e.key === "ArrowRight") j = (i + 1) % n;
+        else if (e.key === "ArrowLeft") j = (i - 1 + n) % n;
+        else if (e.key === "Home") j = 0;
+        else if (e.key === "End") j = n - 1;
+        if (j !== null) { e.preventDefault(); pick(j, true); }
+      });
+    });
+    var start = location.hash === "#manager" ? 1 : 0;
+    pick(start, false);
+  })();
+  </script>
 
   <p style="margin-top:1.5rem"><span class="status-pill">Built, pilot pending</span></p>
 </main>

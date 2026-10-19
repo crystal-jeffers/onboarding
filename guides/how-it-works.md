@@ -1,6 +1,6 @@
 # How It Works
 
-Every employee change runs on one system: a **new hire**, a **role change** and a **departure** each become a *case*. Each case builds its own checklist, sends the requests, and tracks every step until it's done.
+Every **new hire**, **role change**, and **departure** runs on one system, and each one becomes a *case*. Each case builds its own checklist, sends the requests, and tracks every step until it's done.
 
 <div class="callout"><strong>Why it exists.</strong> Onboarding used to live in inboxes and memory. A new hire touched IT, Safety, Fleet, Facilities, Accounting and the union hall, and every manager did it a little differently. Steps got missed, and nobody could see where a hire stood.</div>
 

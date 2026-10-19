@@ -10,7 +10,7 @@ Plain-language meanings for the terms used across these guides, the emails and A
 <div class="g-letter" id="g-b">B</div>
 <dt id="base">Base</dt><dd>The Airtable database behind everything: cases, employees, steps and settings all live in one base. People don't work in the base directly; they use the workspaces.</dd>
 <div class="g-letter" id="g-c">C</div>
-<dt id="case">Case</dt><dd>One employee change being tracked from start to finish: an onboarding, a role change or an offboarding. Each case has its own checklist of steps.</dd>
+<dt id="case">Case</dt><dd>One onboarding, role change, or offboarding, tracked from start to finish. Each case has its own checklist of steps.</dd>
 <dt id="case-owner">Case Owner</dt><dd>The HR person responsible for a case's details. It starts as whoever submitted the form (or, for role changes, whoever approved it) and can be reassigned. Missing-detail emails go to the Case Owner.</dd>
 <dt id="company-vehicle">Company Vehicle</dt><dd>Yes or No on a case and on the employee record. It decides the vehicle steps for any role: an onboarding with Yes gets the MVR, fleet approval, vehicle tools and DOT medical card steps; a role change that turns it on or off gets the assign or return step; an offboarding gets the return step unless the record says No.</dd>
 <dt id="completion-step">Completion step</dt><dd>The second half of a hand-off. When one party asks and another delivers, there are two steps: the request (for example "Request Laptop") and the completion ("Laptop Ready"). The completion step appears as soon as the request is done, owned by whoever delivers. See also <a href="#request-step">Request step</a>.</dd>
