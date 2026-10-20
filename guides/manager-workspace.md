@@ -59,8 +59,8 @@ There are the two places you can send requests from. In either case, you can ope
   <figcaption>All outstanding email tasks in Quick Deploy.</figcaption>
 </figure>
 <figure class="shot">
-  <img src="assets/img/manager/mgr-quick-deploy-detail.png" alt="Quick deploy task details, due dates, etc." loading="lazy">
-  <figcaption>Task details, due dates, etc.</figcaption>
+  <img src="assets/img/manager/mgr-quick-deploy-detail.png" alt="Quick Deploy task details and due dates" loading="lazy">
+  <figcaption>Task details and due dates.</figcaption>
 </figure>
 <figure class="shot">
   <img src="assets/img/manager/mgr-outlook-draft.png" alt="Quick Deploy on-screen drafting." loading="lazy">

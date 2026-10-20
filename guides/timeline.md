@@ -1,6 +1,6 @@
 # Timeline: What Happens When
 
-Every case follows the same shape: a form starts it, steps are timed from one key date, and the case closes itself when the last step is done. Pick a case type to see its checkpoints. The specific steps live in the Task Library in Airtable; this page shows the shape.
+Every case follows the same shape: a form starts it, steps are timed from one key date, and the case closes itself when the last step is done. Pick a case type to see its checkpoints. The specific steps live in the Task Library in Airtable. This page shows the shape.
 
 <div class="tl">
 <input type="radio" name="tl-type" id="tl-on" checked>
@@ -30,10 +30,10 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <div class="tl-body">
 <h3>Get everything ready</h3>
 <p><span class="who who-sys">System</span> sends the requests 3 days before they're due: laptop, phone, building access, safety onboarding, union dispatch, and the vehicle policy if the hire gets a company vehicle. Review &amp; Send managers get drafts instead.</p>
-<p><span class="who who-hr">HR</span> sends the forms, orders the background check and schedules the drug screen.</p>
+<p><span class="who who-hr">HR</span> sends the forms, orders the background check, and schedules the drug screen.</p>
 <p><span class="who who-mgr">Manager</span> reviews drafts if they've chosen to, and submits the Local 393 dispatch form for 393 hires.</p>
-<p><span class="who who-emp">Employee</span> completes portal paperwork, tax forms, direct deposit and the drug screen.</p>
-<p><span class="who who-team">Other teams</span> fulfil the requests. Each request has a matching completion step (laptop ready, fob issued) that appears once the request is done; whoever asked ticks it when the team confirms. The office administrator gets an "Action needed" email to send the first-day welcome.</p>
+<p><span class="who who-emp">Employee</span> completes portal paperwork, tax forms, direct deposit, and the drug screen.</p>
+<p><span class="who who-team">Other teams</span> fulfil the requests. Each request has a matching completion step (laptop ready, fob issued) that appears once the request is done. Whoever asked ticks it when the team confirms. The office administrator gets an "Action needed" email to send the first-day welcome.</p>
 </div>
 </li>
 <li class="tl-stop tl-key-stop">
@@ -71,7 +71,7 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <div class="tl-body">
 <h3>The manager files it</h3>
 <p><span class="who who-mgr">Manager</span> submits the Role Change form, filling in only what's changing.</p>
-<p><span class="who who-sys">System</span> copies in the employee's current details, works out what changed and emails HR to review.</p>
+<p><span class="who who-sys">System</span> copies in the employee's current details, works out what changed, and emails HR to review.</p>
 </div>
 </li>
 <li class="tl-stop tl-gate">
@@ -87,14 +87,14 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <div class="tl-body">
 <h3>Line it up</h3>
 <p><span class="who who-hr">HR</span> updates the HR record and title.</p>
-<p><span class="who who-team">Other teams</span> update payroll and system access; for a new location, building access; for a new local, the union transfer; and any change to vehicle eligibility.</p>
+<p><span class="who who-team">Other teams</span> update payroll and system access. They also handle building access for a new location, the union transfer for a new local, and any change to vehicle eligibility.</p>
 </div>
 </li>
 <li class="tl-stop tl-key-stop">
 <div class="tl-when"><span class="tl-day">Effective date</span><span class="tl-sub">the change takes effect</span></div>
 <div class="tl-body">
 <h3>The change goes live</h3>
-<p><span class="who who-sys">System</span> updates the employee and crew records, so the dispatch calendar, union holidays and bar colors follow on their own.</p>
+<p><span class="who who-sys">System</span> updates the employee and crew records, so the dispatch calendar, union holidays, and bar colors follow on their own.</p>
 <p><span class="who who-mgr">Manager</span> holds the handoff and team introduction.</p>
 </div>
 </li>
@@ -109,7 +109,7 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 </ol>
 </div>
 <div class="tl-panel tl-panel-off">
-<p class="tl-key">Key date: <strong>the last day</strong>. Confidential throughout; involuntary exits have every email reviewed before it sends.</p>
+<p class="tl-key">Key date: <strong>the last day</strong>. Confidential throughout. Involuntary exits have every email reviewed before it sends.</p>
 <ol class="tl-track">
 <li class="tl-start tl-stop">
 <div class="tl-when"><span class="tl-day">Notice</span><span class="tl-sub">case opens</span></div>
@@ -125,14 +125,14 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <h3>Plan the exit</h3>
 <p><span class="who who-hr">HR</span> confirms the separation details.</p>
 <p><span class="who who-mgr">Manager</span> puts together the knowledge transfer and handoff plan.</p>
-<p><span class="who who-team">Other teams</span> schedule access removal and the vehicle, fuel card and toll tag return, cancel the Pcard, and send the union termination notice for union staff. The vehicle return is skipped if the employee record says they have no company vehicle.</p>
+<p><span class="who who-team">Other teams</span> schedule access removal and the vehicle, fuel card, and toll tag return, cancel the Pcard, and send the union termination notice for union staff. The vehicle return is skipped if the employee record says they have no company vehicle.</p>
 </div>
 </li>
 <li class="tl-stop tl-key-stop">
 <div class="tl-when"><span class="tl-day">Last day</span><span class="tl-sub">the effective date</span></div>
 <div class="tl-body">
 <h3>Last day</h3>
-<p><span class="who who-mgr">Manager</span> collects equipment: laptop, phone, badge, keys, tools and PPE.</p>
+<p><span class="who who-mgr">Manager</span> collects equipment: laptop, phone, badge, keys, tools, and PPE.</p>
 <p><span class="who who-hr">HR</span> holds the exit interview and hands over the separation notice and EDD pamphlet.</p>
 <p><span class="who who-team">Other teams</span> prepare the final paycheck and switch off building access.</p>
 <p><span class="who who-sys">System</span> marks the employee Former and takes them off the dispatch calendar, keeping their history.</p>
@@ -159,11 +159,11 @@ Every case follows the same shape: a form starts it, steps are timed from one ke
 <div class="tl-always">
 <h3>Running the whole time</h3>
 <ul>
-<li><strong>3 days before a due date</strong>, a step turns Due Soon and its request goes out (or drafts).</li>
-<li><strong>Every morning at 7:15</strong>, HR gets the open items waiting on employees and outside teams.</li>
-<li><strong>Every Monday</strong>, each manager gets one roll-up of everything overdue or due soon.</li>
-<li><strong>Anytime details are missing</strong>, the Case Owner gets one email saying what to fill in.</li>
-<li><strong>When a request is done</strong>, its completion step appears straight away, owned by whoever delivers.</li>
+<li><strong>3 days before a due date:</strong> the step turns Due Soon and its request sends (or drafts).</li>
+<li><strong>Every morning at 7:15:</strong> HR gets open items waiting on employees and outside teams.</li>
+<li><strong>Every Monday:</strong> each manager gets one roll-up of what's overdue or due soon.</li>
+<li><strong>Details missing:</strong> the Case Owner gets one email saying what to fill in.</li>
+<li><strong>A request is done:</strong> its completion step appears, owned by whoever delivers.</li>
 </ul>
 </div>
 </div>

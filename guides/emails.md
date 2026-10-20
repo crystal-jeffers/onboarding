@@ -1,6 +1,6 @@
 # Every Automated Email
 
-Every email the system sends: who gets it, when, and whether it can be turned off. The rule behind all of them is **one email per thing you need to do**. Requests to IT, Safety and other teams go out in the manager's name, and replies come back to the manager.
+Every email the system sends: who gets it, when, and whether it can be turned off. The rule behind all of them is **one email per thing you need to do**. Requests to IT, Safety, and other teams go out in the manager's name, and replies come back to the manager.
 
 <details class="accordion"> <summary>Requests to other teams</summary> <div class="accordion-body">
 
@@ -13,7 +13,7 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 <table>
 <thead><tr><th>Email</th><th>Sent when</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td>Request (laptop, phone, building access, safety, vehicle policy, union dispatch…)</td><td>3 days before the step is due, or right away from Quick Deploy</td><td>Fully Automated managers: sent directly. Review &amp; Send managers, union halls and involuntary exits: drafted for review first.</td></tr>
+<tr><td>Request (laptop, phone, building access, safety, vehicle policy, union dispatch…)</td><td>3 days before the step is due, or right away from Quick Deploy</td><td>Fully Automated managers: sent directly. Review &amp; Send managers, union halls, and involuntary exits: drafted for review first.</td></tr>
 <tr><td>Action needed (owner notice)</td><td>When a step owned by a team without system access becomes current (for example, the office administrator's welcome email), or when a manager or HR assigns a step to someone in Contacts</td><td>Sent once per step. Comes from, and replies go to, whoever confirms the step: HR or the case manager. Can't be turned off.</td></tr>
 </tbody>
 </table>
@@ -50,7 +50,7 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 <tbody>
 <tr><td>Draft ready for review</td><td>A request is drafted into your Draft Queue. Links straight to it.</td><td>Yes (the draft is still made)</td></tr>
 <tr><td>Waiting on a step</td><td>A request is ready but waits on another step, such as the Local 393 dispatch form. Names the step and links to Manager Triage.</td><td>Yes</td></tr>
-<tr><td>New step ready</td><td>A hands-on step unlocks once the step before it is done. Email steps don't send this; their own email is the notice.</td><td>Yes (the step is still added)</td></tr>
+<tr><td>New step ready</td><td>A hands-on step unlocks once the step before it is done. Email steps don't send this. Their own email is the notice.</td><td>Yes (the step is still added)</td></tr>
 </tbody>
 </table>
 </div>
@@ -91,7 +91,7 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 <thead><tr><th>Email</th><th>Sent when</th><th>Can turn off?</th></tr></thead>
 <tbody>
 <tr><td>New case on your team</td><td>A new hire or departure is opened for your team. Departures are worded confidentially.</td><td>Yes</td></tr>
-<tr><td>Role change received</td><td>You file a role change. It tells you the request is with HR; your steps appear once HR approves.</td><td>Yes</td></tr>
+<tr><td>Role change received</td><td>You file a role change. It tells you the request is with HR. Your steps appear once HR approves.</td><td>Yes</td></tr>
 <tr><td>Case complete</td><td>Every step is done. Departures get a neutral closing note.</td><td>Yes</td></tr>
 <tr><td>Weekly roll-up</td><td>Mondays, about 7:30 AM, when anything is overdue or due soon. Sorted by due date.</td><td>Yes</td></tr>
 <tr><td>HR check-in</td><td>HR ticks Remind Manager</td><td>No</td></tr>
@@ -123,7 +123,7 @@ Every email the system sends: who gets it, when, and whether it can be turned of
 <table>
 <thead><tr><th>Email</th><th>Sent when</th></tr></thead>
 <tbody>
-<tr><td>Missing details</td><td>Once per case, to the Case Owner, when the name, effective date or location is blank. Lists what's missing and links to Case Progress. The case's requests wait until it's filled in, then go out on their own.</td></tr>
+<tr><td>Missing details</td><td>Once per case, to the Case Owner, when the name, effective date, or location is blank. Lists what's missing and links to Case Progress. The case's requests wait until it's filled in, then go out on their own.</td></tr>
 <tr><td>Role change to review</td><td>A manager files a role change. Nothing starts until HR ticks HR Approved.</td></tr>
 <tr><td>Daily open items</td><td>Every morning at 7:15, when steps waiting on outside teams or employees are open in their current phase</td></tr>
 </tbody>

@@ -1,10 +1,10 @@
 # Start a Case
 
-Every onboarding, role change and departure starts with one form. Fill it in, and the checklist, requests and calendar updates follow on their own.
+Every onboarding, role change, and departure starts with one form. Fill it in, and the checklist, requests, and calendar updates follow on their own.
 
-<div class="callout"><strong>You become the Case Owner</strong> of every case you submit. If a request is missing the employee's name, effective date or location, you get one email listing what to fill in. To hand a case to someone else, change <strong>Case Owner</strong> on it.</div>
+<div class="callout"><strong>You become the Case Owner</strong> of every case you submit. If a request is missing the employee's name, effective date, or location, you get one email listing what to fill in. To hand a case to someone else, change <strong>Case Owner</strong> on it.</div>
 
-<div class="callout"><strong>Rule of thumb:</strong> submit the form as soon as the decision is made: when the offer is accepted, the change is approved, or notice is given. The earlier the case exists, the more lead time IT, Safety and Fleet get.</div>
+<div class="callout"><strong>Rule of thumb:</strong> submit the form as soon as the decision is made: when the offer is accepted, the change is approved, or notice is given. The earlier the case exists, the more lead time IT, Safety, and Fleet get.</div>
 
 <details class="accordion"> <summary>New hire (New Hire Kickoff form)</summary> <div class="accordion-body">
 
@@ -35,7 +35,7 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
 <ol>
 <li>The case is created and linked to the manager.</li>
 <li>The person is added to the <strong>Employees</strong> list, so future role changes or departures can find them.</li>
-<li>Their checklist builds itself: typically 13 to 17 steps, depending on role, department and union.</li>
+<li>Their checklist builds itself: typically 13 to 17 steps, depending on role, department, and union.</li>
 <li>Field hires get a <strong>Crew</strong> record on the dispatch calendar.</li>
 <li>The manager gets a "New hire added to your team" email, if they've left that on.</li>
 </ol>
@@ -50,12 +50,12 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
   <figcaption>Role Change form. Only fill in what's changing.</figcaption>
 </figure>
 
-<p>The <strong>hiring manager</strong> files role changes; HR approves them.</p>
+<p>The <strong>hiring manager</strong> files role changes, and HR approves them.</p>
 
 <ol class="chunked-list">
 <li>Pick the <strong>Employee</strong>. The list shows each current employee once, with today's details.</li>
 <li>Enter the <strong>Effective Date</strong>: the day the change takes effect.</li>
-<li>Fill in <strong>only what's changing</strong>: Role, Department, Manager, Location, Team, Level, Union Local or Company Vehicle (Yes if they're getting one, No if they're giving one up). Leave the rest blank, and their current details carry over.</li>
+<li>Fill in <strong>only what's changing</strong>: Role, Department, Manager, Location, Team, Level, Union Local, or Company Vehicle (Yes if they're getting one, No if they're giving one up). Leave the rest blank, and their current details carry over.</li>
 <li>Tick <strong>Pay</strong> or <strong>Vehicle Eligibility</strong> under What's Changing if those change. Everything else is detected automatically.</li>
 </ol>
 
@@ -66,7 +66,7 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
 <li>The system compares new against current and works out what changed.</li>
 <li><strong>HR gets a "Role change to review" email.</strong> Check the case and tick <strong>HR Approved</strong>. Nothing starts until you do.</li>
 <li>Every role change gets the core steps (HR record, payroll, system access). Each change adds only its own steps: a new location adds building access, a new local adds the union transfer notice, a new manager adds the handoff meeting.</li>
-<li>On the effective date, their Employees record (and Crew record, for field staff) updates by itself, so the dispatch calendar, holidays and colors follow.</li>
+<li>On the effective date, their Employees record (and Crew record, for field staff) updates by itself, so the dispatch calendar, holidays, and colors follow.</li>
 </ol>
 </div>
 
@@ -94,7 +94,7 @@ Every onboarding, role change and departure starts with one form. Fill it in, an
 <div class="numbered-group">
 <h4>What happens next</h4>
 <ol>
-<li>The person's details are copied in and the departure checklist builds: equipment return, access removal, final paycheck, COBRA notice and closeout.</li>
+<li>The person's details are copied in and the departure checklist builds: equipment return, access removal, final paycheck, COBRA notice, and closeout.</li>
 <li>On the last day, the person is marked <strong>Former</strong> (so they drop out of the form pickers), and field staff come off the dispatch calendar and Friday emails. All their history is kept.</li>
 </ol>
 </div>

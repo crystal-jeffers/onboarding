@@ -10,7 +10,7 @@ Short answers to the questions people ask most, plus where each piece of informa
 **Who gets it:** the **Case Owner** (usually the person who submitted the form).
 
 <div class="numbered-group">
-<strong>What it means:</strong> a request needs an employee's name, effective date, location, etc. and one of them is blank on the case. Every request on that case is on hold until it's filled in. You get <strong>one</strong> email per case, not one per request.</div>
+<strong>What it means:</strong> a request needs details like the employee's name, effective date, or location, and one of them is blank on the case. Every request on that case is on hold until it's filled in. You get <strong>one</strong> email per case, not one per request.</div>
 
 **What to do:**
 1. Click **Open Case Progress** in the email.
@@ -59,21 +59,21 @@ When the new step is an email request, you don't get a separate "new step" notic
 That's the **completion step**. Asking and delivering are two steps with two owners: "Request Laptop" is yours, "Laptop Ready" belongs to IT. The completion step appears as soon as the request is done, so you can see what you're still waiting on.
 
 <div class="numbered-group">
-IT, vendors and the employee aren't in the system, so whoever sent the request ticks the completion step (see **Confirmed By**) once they hear it's done.</div>
+IT, vendors, and the employee aren't in the system, so whoever sent the request ticks the completion step (see **Confirmed By**) once they hear it's done.</div>
 
 </div> </details>
 
 <details class="accordion"> <summary>Role changes: who does what?</summary> <div class="accordion-body">
   
 <ol>
-<li><strong>The manager files</strong> the Role Change form. Only fill in what's changing; blank fields keep the employee's current details.</li>
+<li><strong>The manager files</strong> the Role Change form. Only fill in what's changing. Blank fields keep the employee's current details.</li>
 <li><strong>HR gets a "Role change to review" email</strong> listing every change.</li>
 <li><strong>HR checks it and ticks HR Approved</strong> on the case. Until then nothing happens: no steps, no requests, no record changes.</li>
-<li>After approval, the steps are created (payroll, IT access, union transfer and so on, only for what's changing). On the effective date, the employee's record and crew record update themselves.</li>
+<li>After approval, the steps are created (payroll, IT access, union transfer, and so on, only for what's changing). On the effective date, the employee's record and crew record update themselves.</li>
 </ol>
 
 <div class="numbered-group">
-<strong>Is a level change a role change?</strong> Yes. A change of level, union local or team usually changes pay, dues or the labor agreement, so it goes through the Role Change form and HR approval. A service manager doesn't edit those directly.</div>
+<strong>Is a level change a role change?</strong> Yes. A change of level, union local, or team usually changes pay, dues, or the labor agreement, so it goes through the Role Change form and HR approval. A service manager doesn't edit those directly.</div>
 
 </div> </details>
 

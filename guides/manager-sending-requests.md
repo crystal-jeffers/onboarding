@@ -1,6 +1,6 @@
 # Sending Requests
 
-Most of what a new hire needs (a laptop, a phone, building access, a vehicle, etc) starts with an email from you. The system writes those emails, fills in the person's details and sends them on time. How much you're involved is up to you.
+Most of what a new hire needs (a laptop, a phone, building access, or a vehicle) starts with an email from you. The system writes those emails, fills in the person's details, and sends them on time. How much you're involved is up to you.
 
 <details class="accordion"> <summary>Pick your send mode</summary> <div class="accordion-body">
 
@@ -34,7 +34,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
   <figcaption>Open one to preview it.</figcaption>
 </figure>
 <figure class="shot">
-  <img src="assets/img/manager/mgr-outlook-draft.png" alt="Outlook compose window pre-filled with To, CC, subject and body" loading="lazy">
+  <img src="assets/img/manager/mgr-outlook-draft.png" alt="Outlook compose window pre-filled with To, CC, subject, and body" loading="lazy">
   <figcaption>Open in Outlook: everything's filled in.</figcaption>
 </figure>
 </div>
@@ -43,7 +43,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
 <h4>Option 1: Send it from Outlook</h4>
 <ol>
 <li>Click <strong>Open in Outlook</strong>.</li>
-<li>A new email opens with To, CC, subject and body filled in.</li>
+<li>A new email opens with To, CC, subject, and body filled in.</li>
 <li>Edit it if you like, then send it from Outlook as normal.</li>
 <li>Back in Airtable, <strong>Mark Complete</strong>. If someone else has to deliver it, the completion step appears next.</li>
 </ol>
@@ -80,7 +80,7 @@ Quick Deploy lists every request that's ready to go: current phase or earlier, d
 </div>
 
 <ol class="chunked-list">
-<li>Open a draft. <strong>Send To</strong>, <strong>CC</strong>, <strong>Subject</strong> and <strong>Body</strong> are all editable, and your changes only affect this one email.</li>
+<li>Open a draft. <strong>Send To</strong>, <strong>CC</strong>, <strong>Subject</strong>, and <strong>Body</strong> are all editable, and your changes only affect this one email.</li>
 <li>Then click <strong>Open in Outlook</strong> and tick <strong>Mark Complete</strong> when done.</li>
 </ol>
 

@@ -1,6 +1,6 @@
 # HR Workspace Tour
 
-HR sees every case, every manager and every step. Managers only see their own people, in the Manager Workspace.
+HR sees every case, every manager, and every step. Managers only see their own people, in the Manager Workspace.
 
 <details class="accordion"> <summary>Home Dashboard: the daily glance</summary> <div class="accordion-body">
 
@@ -10,7 +10,7 @@ HR sees every case, every manager and every step. Managers only see their own pe
 
 - **Tiles:** active hires, hires behind schedule, and overdue and due-soon tasks across all owners.
 - **All Hires by Stage:** one row per case, with a badge for each phase (Before Start, Day 1, First Week, Post Start).
-- **Open Tasks by Owner:** who's holding things up: IT, Safety, the new hire or a manager.
+- **Open Tasks by Owner:** who's holding things up: IT, Safety, the new hire, or a manager.
 
 </div> </details>
 
@@ -20,7 +20,7 @@ HR sees every case, every manager and every step. Managers only see their own pe
   <img src="assets/img/hr/hr-case-progress.png" alt="Case Progress list of every onboarding, role change and offboarding" loading="lazy">
 </figure>
 
-- One row per case: onboardings, role changes and offboardings together. Use the **Case Type** column to tell them apart.
+- One row per case: onboardings, role changes, and offboardings together. Use the **Case Type** column to tell them apart.
 - Open a case to see its details and full task list. Steps that need attention are grouped at the top.
 - **Separation Notes** appear only here, on HR's view of an offboarding.
 
@@ -32,7 +32,7 @@ HR sees every case, every manager and every step. Managers only see their own pe
   <img src="assets/img/hr/hr-employees.png" alt="Employees list with Active and Former tabs" loading="lazy">
 </figure>
 
-- **One row per person** with their *current* role, department, manager, location and union. (A case is one *event*; this is the *person*.)
+- **One row per person** with their *current* role, department, manager, location, and union. (A case is one *event*. This is the *person*.)
 - New hires are added automatically from the Kickoff form. Role changes update them on the effective date, and departures move them to **Former**.
 - The Role Change and Offboarding forms pick from the **Active** tab, so every person appears once, with today's details.
 
@@ -76,7 +76,7 @@ HR sees every case, every manager and every step. Managers only see their own pe
 <details class="accordion"> <summary>Task Library and Applicability Groups</summary> <div class="accordion-body">
 
 - **Task Library:** the master list of every step. Edit a step once, and every future case gets the change. See <a href="guide.html?role=hr&amp;file=guides%2Fhr-task-library.md">Editing the Task Library</a>.
-- **Applicability Groups:** the rules that decide which roles, departments, locations and unions get which steps.
+- **Applicability Groups:** the rules that decide which roles, departments, locations, and unions get which steps.
 
 <figure class="shot">
   <img src="assets/img/hr/hr-task-library.png" alt="Task Library list of steps" loading="lazy">

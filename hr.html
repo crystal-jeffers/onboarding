@@ -3,28 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Employee Lifecycle Guides</title>
-<link rel="stylesheet" href="assets/style.css?v=4">
+<title>Employee Lifecycle · HR</title>
+<meta name="description" content="Southland employee lifecycle guides: onboarding, role changes, and offboarding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=20">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
 </head>
 <body>
-<header class="sticky">
-<div class="top-row">
-<h1>Employee Lifecycle</h1>
-<button id="jump-nav-toggle">Guides ▾</button>
-</div>
-<span class="role-tag" id="role-tag"></span>
-<div id="jump-nav-menu"></div>
-<div class="extras-row" id="extras-row"></div>
-</header>
-<main>
-<div id="sop-list"></div>
-</main>
-<script src="assets/nav-config.js?v=4"></script>
-<script src="assets/render.js?v=4"></script>
+<noscript><p style="padding:1rem">This site needs JavaScript turned on to show the guides.</p></noscript>
+<script src="assets/nav-config.js?v=20"></script>
+<script src="assets/render.js?v=20"></script>
 <script>
   if (typeof SOP_LIBRARY === "undefined" || typeof renderHub === "undefined") {
-    document.getElementById("sop-list").innerHTML =
-      "<p><strong>Couldn't load the guide list.</strong> assets/nav-config.js or assets/render.js is missing or has an error.</p>";
+    document.body.innerHTML = "<p style='padding:1rem'><strong>Couldn't load the guides.</strong> assets/nav-config.js or assets/render.js is missing or has an error.</p>";
   } else {
     renderHub("hr");
   }

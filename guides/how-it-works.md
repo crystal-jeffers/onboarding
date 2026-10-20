@@ -2,9 +2,9 @@
 
 Every **new hire**, **role change**, and **departure** runs on one system, and each one becomes a *case*. Each case builds its own checklist, sends the requests, and tracks every step until it's done.
 
-<div class="callout"><strong>Why it exists.</strong> Onboarding used to live in inboxes and memory. A new hire touched IT, Safety, Fleet, Facilities, Accounting and the union hall, and every manager did it a little differently. Steps got missed, and nobody could see where a hire stood.</div>
+<div class="callout"><strong>Why it exists.</strong> Onboarding used to live in inboxes and memory. A new hire touched IT, Safety, Fleet, Facilities, Accounting, and the union hall, and every manager did it a little differently. Steps got missed, and nobody could see where a hire stood.</div>
 
-Now HR fills in one form, and the system builds the right checklist for that person's role, department, location and union. It sends the routine requests on time and shows everyone what's still open.
+Now HR fills in one form, and the system builds the right checklist for that person's role, department, location, and union. It sends the routine requests on time and shows everyone what's still open.
 
 <figure class="shot">
   <img src="assets/img/hr/hr-home-dashboard.png" alt="HR Home Dashboard with active hires, overdue and due-soon counts, and every case by stage" loading="lazy">
@@ -32,10 +32,10 @@ flowchart TD
 <div class="numbered-group">
 <ol>
 <li><strong>HR starts a case</strong> with one form. (Each case type has its own.)</li>
-<li><strong>The checklist builds itself.</strong> Only the steps that apply to this person's role, department, location, union and case type are added.</li>
-<li><strong>Each step gets a due date</strong> auto-calculated from the case's key date (first day, change date or last day).</li>
+<li><strong>The checklist builds itself.</strong> Only the steps that apply to this person's role, department, location, union, and case type are added.</li>
+<li><strong>Each step gets a due date</strong> auto-calculated from the case's key date (first day, change date, or last day).</li>
 <li><strong>When a step is due soon</strong>, the system either auto-sends emails in the manager's name or creates drafts for review, depending on their setting.</li>
-<li><strong>Steps that need a person</strong> (training, collecting equipment, etc) show on that owner's list until someone marks them complete.</li>
+<li><strong>Steps that need a person</strong> (training, collecting equipment, and so on) show on that owner's list until someone marks them complete.</li>
 <li><strong>Some steps unlock others.</strong> For example, a Local 393 dispatch request can't go out until the dispatch form is submitted. The task appears the moment the prerequisite step is marked complete.</li>
 <li><strong>The case closes itself</strong> when every step is complete, and the manager gets a closing note if they want one.</li>
 </ol>
@@ -67,9 +67,9 @@ Every step belongs to a phase. The due date comes from the case's key date.
 <thead><tr><th>Phase</th><th>Due</th><th>Typical steps</th></tr></thead>
 <tbody>
 <tr><td>Before Start</td><td>7 days after the case opens (or the day before the key date, whichever comes first)</td><td>Laptop, phone, building access, union dispatch, vehicle policy</td></tr>
-<tr><td>Day 1</td><td>The key date</td><td>Day 1 training; on a departure, collecting equipment and the final paycheck</td></tr>
+<tr><td>Day 1</td><td>The key date</td><td>Day 1 training. On a departure, collecting equipment and the final paycheck.</td></tr>
 <tr><td>First Week</td><td>4 days after the key date</td><td>Day 3 training, on-site protocol review, 30/60/90 check-ins</td></tr>
-<tr><td>Post Start</td><td>14 days after the key date</td><td>Business cards; on a departure, closing out the case</td></tr>
+<tr><td>Post Start</td><td>14 days after the key date</td><td>Business cards. On a departure, closing out the case.</td></tr>
 </tbody>
 </table>
 </div>
@@ -83,7 +83,7 @@ Every step belongs to a phase. The due date comes from the case's key date.
 
 <div class="numbered-group"><strong>Nothing sends without the facts.</strong> If automated emails are missing an employee's name, date, location, or its prerequisite isn't done, it waits and tells the manager exactly what to fix. Once that's fixed, it sends by itself.</div>
 
-<div class="numbered-group"><strong>Sensitive materials are HITL-managed.</strong> Even if Fully Automated preferences are set, sensitive material such asinvoluntary exit coordination, emails to the union hall, etc, are drafted manual review and approval.</div>
+<div class="numbered-group"><strong>Sensitive materials are HITL-managed.</strong> Even if Fully Automated preferences are set, sensitive material such as involuntary exit coordination and emails to the union hall, are drafted for manual review and approval.</div>
 
 <div class="numbered-group"><strong>Departure details stay private.</strong> HR's separation notes never appear in an email or on a manager's page.</div>
 
@@ -93,7 +93,7 @@ Every step belongs to a phase. The due date comes from the case's key date.
 
 </div> </details>
 
-<details class="accordion"> <summary>Workspaces> <div class="accordion-body">
+<details class="accordion"> <summary>Workspaces</summary> <div class="accordion-body">
 
 <div class="table-scroll">
 <table>

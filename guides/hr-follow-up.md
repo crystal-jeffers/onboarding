@@ -34,16 +34,16 @@ Managers who leave the **Monday roll-up** on get the same list every week withou
 
 A request waits (and the manager is told why) when:
 
-- The case is missing the employee's name, date or location, **or**
+- The case is missing the employee's name, date, or location, **or**
 - The step's prerequisite isn't done yet.
 
-The task's **Action Needed** field says exactly what to fix. Once it's fixed, the request sends by itself; nobody needs to resubmit anything.
+The task's **Action Needed** field says exactly what to fix. Once it's fixed, the request sends by itself. Nobody needs to resubmit anything.
 
 </div> </details>
 
 <details class="accordion"> <summary>Closing the loop</summary> <div class="accordion-body">
 
-- When a request is done, its completion step appears (badge deactivated, payroll updated). If **Confirmed By** is HR, it shows on your daily Open Items email; tick **Mark Complete** once the team confirms.
-- A case closes itself when every step is complete. Onboardings, role changes and offboardings each get their own closing note (no "Congrats!" on a departure).
+- When a request is done, its completion step appears (badge deactivated, payroll updated). If **Confirmed By** is HR, it shows on your daily Open Items email. Tick **Mark Complete** once the team confirms.
+- A case closes itself when every step is complete. Onboardings, role changes, and offboardings each get their own closing note (no "Congrats!" on a departure).
 
 </div> </details>

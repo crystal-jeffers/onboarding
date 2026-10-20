@@ -56,7 +56,7 @@ The Start-Up new hire procedure from the area superintendents, in its original o
 <p>Request goes to the MVR inbox, CC'ing the vehicle policy coordinator and NorCal Start-Up Supervision. The new hire fills out page 12 and returns it. Results can take up to 3 days.</p>
 <ul class="ck-sub">
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Signed vehicle policy is back</span></label><div class="ck-meta"><span class="tag tag-conf">✓ You confirm</span></div></li>
-<li><label class="ck-row"><input type="checkbox"><span class="ck-title">Forward the approval to Fleet with the confirmed start date</span></label><div class="ck-meta"><span class="tag tag-you">You do it</span></div><p>Fleet assigns the vehicle and provides the fuel card, PIN and FasTrak.</p></li>
+<li><label class="ck-row"><input type="checkbox"><span class="ck-title">Forward the approval to Fleet with the confirmed start date</span></label><div class="ck-meta"><span class="tag tag-you">You do it</span></div><p>Fleet assigns the vehicle and provides the fuel card, PIN, and FasTrak.</p></li>
 </ul>
 </li>
 <li class="ck-item is-auto">
@@ -115,7 +115,7 @@ The Start-Up new hire procedure from the area superintendents, in its original o
 <label class="ck-row"><input type="checkbox"><span class="ck-num">5</span><span class="ck-title">Additional software request (Bluebeam)</span></label>
 <div class="ck-meta"><span class="tag tag-auto">⚡ Sends for you</span><span class="tag tag-when">Before day 1</span><span class="tag tag-if">Foreman and above, design and detailing roles</span></div>
 <p>Added automatically for those roles. HR can tick <strong>Additional Software</strong> on the Kickoff form for anyone else who needs it.</p>
-<details class="ck-more"><summary>Reason to give</summary><p>"Start-Up Foreman, needs to review, share and mark up drawings, prints and project documents to coordinate with project management and engineering."</p></details>
+<details class="ck-more"><summary>Reason to give</summary><p>"Start-Up Foreman, needs to review, share, and mark up drawings, prints, and project documents to coordinate with project management and engineering."</p></details>
 <ul class="ck-sub">
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Bluebeam access granted</span></label><div class="ck-meta"><span class="tag tag-conf">✓ You confirm</span></div></li>
 </ul>
@@ -158,7 +158,7 @@ The Start-Up new hire procedure from the area superintendents, in its original o
 <label class="ck-row"><input type="checkbox"><span class="ck-num">11</span><span class="ck-title">Department training: Day 1</span></label>
 <div class="ck-meta"><span class="tag tag-you">You do it</span><span class="tag tag-when">Day 1</span></div>
 <ul class="ck-sub">
-<li><label class="ck-row"><input type="checkbox"><span class="ck-title">SI safety training, direct deposit setup and onboarding paperwork</span></label></li>
+<li><label class="ck-row"><input type="checkbox"><span class="ck-title">SI safety training, direct deposit setup, and onboarding paperwork</span></label></li>
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Vehicle pickup</span></label><div class="ck-meta"><span class="tag tag-if">Company vehicle only</span></div></li>
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Review vehicle accident reporting</span></label><div class="ck-meta"><span class="tag tag-if">Company vehicle only</span></div></li>
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Fuel card lock and the Enterprise app</span></label><div class="ck-meta"><span class="tag tag-if">Company vehicle only</span></div></li>
