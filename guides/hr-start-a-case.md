@@ -6,7 +6,7 @@ Every onboarding, role change, and departure starts with one form. Fill it in, a
 
 <div class="callout"><strong>Rule of thumb:</strong> submit the form as soon as the decision is made: when the offer is accepted, the change is approved, or notice is given. The earlier the case exists, the more lead time IT, Safety, and Fleet get.</div>
 
-<details class="accordion"> <summary>New hire (New Hire Kickoff form)</summary> <div class="accordion-body">
+<details class="accordion"> <summary>New hire</summary> <div class="accordion-body">
 
 <figure class="shot">
   <img src="assets/img/forms/form-new-hire-kickoff.png" alt="New Hire Kickoff form" loading="lazy">
@@ -43,7 +43,7 @@ Every onboarding, role change, and departure starts with one form. Fill it in, a
 
 </div> </details>
 
-<details class="accordion"> <summary>Role change (Role Change form)</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Role change</summary> <div class="accordion-body">
 
 <figure class="shot">
   <img src="assets/img/forms/form-role-change.png" alt="Role Change form" loading="lazy">
@@ -72,7 +72,7 @@ Every onboarding, role change, and departure starts with one form. Fill it in, a
 
 </div> </details>
 
-<details class="accordion"> <summary>Departure (Offboarding form)</summary> <div class="accordion-body">
+<details class="accordion"> <summary>Departure (Offboarding)</summary> <div class="accordion-body">
 
 <figure class="shot">
   <img src="assets/img/forms/form-offboarding.png" alt="Offboarding form" loading="lazy">
