@@ -8,7 +8,7 @@ Most of what a new hire needs (a laptop, a phone, building access, or a vehicle)
 <table>
 <thead><tr><th>Mode</th><th>When a request is due</th><th>Good for</th></tr></thead>
 <tbody>
-<tr><td><strong>Fully Automated</strong></td><td>It sends in your name, with replies coming back to you. You don't have to do anything.</td><td>Managers who trust the templates and want zero admin.</td></tr>
+<tr><td><strong>Fully Automated</strong></td><td>Emails send automatically. (in your name, with replies coming back to you. You don't have to do anything.)</td><td>Managers who trust the templates and want zero admin.</td></tr>
 <tr><td><strong>Review &amp; Send</strong></td><td>Emails are automatically drafted into your <strong>Draft Queue</strong>. You check it and send it.</td><td>New managers, special notes, or anyone who likes to add a personal line.</td></tr>
 </tbody>
 </table>
