@@ -217,6 +217,15 @@ function wrapSections(root) {
   });
   root.innerHTML = "";
   root.appendChild(out);
+  // Blank lines typed just before a "## Heading" add space between the cards,
+  // not inside the bottom of the card above.
+  $$(".sec", root).forEach(sec => {
+    let last = sec.lastElementChild;
+    while (last && last.classList.contains("spacer")) {
+      sec.after(last);
+      last = sec.lastElementChild;
+    }
+  });
 }
 
 /* Numbered lists keep counting across groups: a list that starts at 7 shows 7. */
@@ -635,18 +644,19 @@ function startReveals() {
   });
 }
 
-/* ---------- Timeline page: the stop nearest the focus line comes forward ----------
-   Like the portfolio project cards. The case-type filters stay pinned at the
-   top while you scroll, and switching type re-focuses the new track. */
-function buildTimelineFocus(root) {
-  const tl = $(".tl", root);
-  if (!tl) return;
-  if (!reduceMotion) tl.classList.add("focus-on");
-  const shown = () => $$(".tl-panel", tl).filter(p => p.offsetParent !== null).flatMap(p => $$(".tl-stop", p));
+/* ---------- Focus: as you scroll, the card nearest the focus line comes forward ----------
+   Like the portfolio project cards. Used on the Timeline stops and the
+   Manager Checklist cards. Only cards that are showing (the current tab or
+   case type) take part. */
+function focusList(scope, selector) {
+  if (reduceMotion) return;
+  scope.classList.add("focus-on");
+  const all = () => $$(selector, scope);
+  const shown = () => all().filter(n => n.offsetParent !== null);
   let pinned = null;
   function mark(list, cur) {
-    $$(".tl-stop", tl).forEach(s => { if (!list.includes(s)) s.classList.remove("is-active", "is-past"); });
-    list.forEach((s, i) => { s.classList.toggle("is-active", i === cur); s.classList.toggle("is-past", i < cur); });
+    all().forEach(n => { if (!list.includes(n)) n.classList.remove("is-active", "is-past"); });
+    list.forEach((n, i) => { n.classList.toggle("is-active", i === cur); n.classList.toggle("is-past", i < cur); });
   }
   function onScroll() {
     const list = shown();
@@ -654,18 +664,151 @@ function buildTimelineFocus(root) {
     if (pinned && list.includes(pinned)) { mark(list, list.indexOf(pinned)); return; }
     const line = window.innerHeight * 0.42;
     let cur = 0;
-    list.forEach((s, i) => { if (s.getBoundingClientRect().top < line) cur = i; });
+    list.forEach((n, i) => { if (n.getBoundingClientRect().top < line) cur = i; });
     const last = list[list.length - 1].getBoundingClientRect();
     if (last.bottom < window.innerHeight * 0.9 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) cur = list.length - 1;
     mark(list, cur);
   }
   window.addEventListener("scroll", () => { pinned = null; requestAnimationFrame(onScroll); }, { passive: true });
-  tl.addEventListener("change", () => { pinned = null; requestAnimationFrame(onScroll); });
-  $$(".tl-stop", tl).forEach(s => {
-    s.addEventListener("focusin", () => { pinned = s; onScroll(); });
-    s.addEventListener("click", () => { pinned = s; onScroll(); });
+  scope.addEventListener("change", () => { pinned = null; requestAnimationFrame(onScroll); });
+  scope.addEventListener("binderchange", () => { pinned = null; requestAnimationFrame(onScroll); });
+  all().forEach(n => {
+    n.addEventListener("focusin", () => { pinned = n; onScroll(); });
+    n.addEventListener("click", () => { pinned = n; onScroll(); });
   });
   requestAnimationFrame(onScroll);
+}
+
+/* ---------- Timeline page ---------- */
+function buildTlPage(root) {
+  const tl = $(".tl", root);
+  if (!tl) return;
+  // Each "who" chip and what they do sit in a row of a light table,
+  // so the text never wraps around the chip.
+  $$(".tl-body", tl).forEach(body => {
+    let table = null;
+    Array.from(body.children).forEach(p => {
+      const lead = p.tagName === "P" ? Array.from(p.childNodes).find(n => n.nodeType === 1 || n.textContent.trim()) : null;
+      if (!lead || lead.nodeType !== 1 || !lead.classList.contains("who")) { table = null; return; }
+      if (!table) { table = el("div", "tl-rows"); p.before(table); }
+      let row = null;
+      Array.from(p.childNodes).forEach(n => {
+        if (n.nodeType === 1 && n.classList.contains("who")) {
+          row = el("div", "tl-row");
+          const who = el("div", "tl-who");
+          who.appendChild(n);
+          row.append(who, el("div", "tl-what"));
+          table.appendChild(row);
+        } else if (row) row.lastChild.appendChild(n);
+      });
+      p.remove();
+    });
+    $$(".tl-what", body).forEach(w => {
+      if (w.firstChild && w.firstChild.nodeType === 3) w.firstChild.textContent = w.firstChild.textContent.replace(/^\s+/, "");
+      if (w.lastChild && w.lastChild.nodeType === 3) w.lastChild.textContent = w.lastChild.textContent.replace(/\s+$/, "");
+    });
+  });
+  // Running the whole time: the timing in a white bubble, what happens in an orange one.
+  $$(".tl-always li", tl).forEach(li => {
+    const s = li.querySelector("strong");
+    if (!s || li.firstElementChild !== s) return;
+    const when = el("span", "always-when", esc(s.textContent.replace(/:\s*$/, "")));
+    s.remove();
+    const what = el("span", "always-what");
+    while (li.firstChild) what.appendChild(li.firstChild);
+    what.innerHTML = what.innerHTML.replace(/^\s*:?\s*/, "");
+    if (/^[a-z]/.test(what.innerHTML)) what.innerHTML = what.innerHTML.charAt(0).toUpperCase() + what.innerHTML.slice(1);
+    li.append(when, what);
+  });
+  focusList(tl, ".tl-stop");
+}
+
+/* ---------- Binder tabs: accordions inside <div class="binder"> become tabs ---------- */
+function buildBinders(root) {
+  $$(".binder", root).forEach((box, b) => {
+    const items = $$(":scope > details.accordion", box);
+    if (items.length < 2) return;
+    box.classList.add("binder-ready");
+    const tabs = el("div", "binder-tabs");
+    tabs.setAttribute("role", "tablist");
+    const panels = [], btns = [];
+    items.forEach((d, i) => {
+      const sum = d.querySelector(":scope > summary");
+      const label = sum ? sum.innerHTML : "Tab " + (i + 1);
+      const id = "binder-" + b + "-" + i;
+      const panel = el("section", "folder-panel");
+      panel.id = id + "-panel";
+      panel.setAttribute("role", "tabpanel");
+      panel.setAttribute("aria-labelledby", id);
+      panel.appendChild(el("h3", "folder-title", label));
+      const body = d.querySelector(":scope > .accordion-body") || d;
+      Array.from(body.childNodes).forEach(n => { if (n !== sum) panel.appendChild(n); });
+      d.replaceWith(panel);
+      const count = $$(".ck-item", panel).length;
+      const t = el("button", "binder-tab", label + (count ? '<span class="binder-count">' + count + "</span>" : ""));
+      t.type = "button"; t.id = id;
+      t.setAttribute("role", "tab");
+      t.setAttribute("aria-controls", panel.id);
+      tabs.appendChild(t);
+      panels.push(panel); btns.push(t);
+    });
+    box.prepend(tabs);
+    function pick(i, focus) {
+      btns.forEach((t, k) => {
+        const on = k === i;
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        panels[k].hidden = !on;
+      });
+      if (focus) btns[i].focus();
+      box.dispatchEvent(new CustomEvent("binderchange", { bubbles: true }));
+    }
+    btns.forEach((t, i) => {
+      t.addEventListener("click", () => {
+        pick(i, false);
+        const top = box.getBoundingClientRect().top;
+        if (top < 0) window.scrollTo({ top: window.scrollY + top - 90, behavior: reduceMotion ? "auto" : "smooth" });
+      });
+      t.addEventListener("keydown", e => {
+        const n = btns.length;
+        let j = null;
+        if (e.key === "ArrowRight") j = (i + 1) % n;
+        else if (e.key === "ArrowLeft") j = (i - 1 + n) % n;
+        else if (e.key === "Home") j = 0;
+        else if (e.key === "End") j = n - 1;
+        if (j !== null) { e.preventDefault(); pick(j, true); }
+      });
+    });
+    pick(0, false);
+  });
+  // Printing shows every tab, one after another.
+  window.addEventListener("beforeprint", () => { $$(".ck-more").forEach(d => { d.dataset.wasOpen = d.open ? "1" : ""; d.open = true; }); });
+  window.addEventListener("afterprint", () => { $$(".ck-more").forEach(d => { d.open = d.dataset.wasOpen === "1"; }); });
+}
+
+/* ---------- Manager checklist: send mode switch, print button, card focus ---------- */
+function buildChecklistPage(root) {
+  const ck = $(".ck", root);
+  if (!ck) return;
+  const LINES = {
+    fa: "Sends on its own, in your name, on schedule. Watch for the reply.",
+    rs: "Lands in your Draft Queue. Check it, then send."
+  };
+  $$(".ck-item.is-auto:not(.is-reviewed)", ck).forEach(item => {
+    const head = item.querySelector(".ck-head");
+    const p = el("p", "ck-mode", '<span class="m-fa">' + LINES.fa + '</span><span class="m-rs">' + LINES.rs + "</span>");
+    (head || item.firstElementChild).after(p);
+  });
+  function setMode(m) {
+    ck.dataset.mode = m;
+    $$("[data-set-mode]", ck).forEach(b => b.setAttribute("aria-pressed", b.dataset.setMode === m ? "true" : "false"));
+    store("ck-send-mode", m);
+  }
+  $$("[data-set-mode]", ck).forEach(b => b.addEventListener("click", () => setMode(b.dataset.setMode)));
+  setMode(store("ck-send-mode") || ck.dataset.mode || "rs");
+  $$("[data-print]", ck).forEach(b => b.addEventListener("click", () => window.print()));
+  $$("[data-clear]", ck).forEach(b => b.addEventListener("click", () => $$("input[type=checkbox]", ck).forEach(i => (i.checked = false))));
+  focusList(ck, ".ck-item");
 }
 
 /* ---------- Definitions page: a search box that filters the terms as you type ---------- */
@@ -965,6 +1108,7 @@ async function renderSopPage() {
   styleImages(box);
   wrapTables(box);
   styleLinks(box);
+  buildBinders(box);
   wrapSections(box);
   if (type === "timeline") buildTimeline(box);
   continueNumbers(box);
@@ -989,7 +1133,8 @@ async function renderSopPage() {
   main.innerHTML = "";
   main.appendChild(art);
   buildChecklists(box);
-  buildTimelineFocus(box);
+  buildTlPage(box);
+  buildChecklistPage(box);
   buildGlossarySearch(box);
   missingShots(box);
   runMermaid(box);

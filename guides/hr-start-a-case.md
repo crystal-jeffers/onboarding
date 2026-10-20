@@ -1,9 +1,17 @@
-# Start a Case
+# Case Management
 
 Every onboarding, role change, and departure starts with one form. Fill it in, and the checklist, requests, and calendar updates follow on their own.
 
+<div class="quick-buttons">
+<a href="https://airtable.com/appe3ibHthgBJFYUs/pagIZ5QHvQf1Fn2Jo"><strong>New hire</strong><span>Open the New Hire Kickoff form ↗</span></a>
+<a href="https://airtable.com/appe3ibHthgBJFYUs/pagbni9uE1nRlsSLn"><strong>Role change</strong><span>Open the Role Change form ↗</span></a>
+<a href="https://airtable.com/appe3ibHthgBJFYUs/pagqgEkQl2HExsMwf"><strong>Departure</strong><span>Open the Offboarding form ↗</span></a>
+</div>
+
 <div class="callout"><strong>You become the Case Owner</strong> of every case you submit. If a request is missing the employee's name, effective date, or location, you get one email listing what to fill in. To hand a case to someone else, change <strong>Case Owner</strong> on it.</div>
 
+
+<div class="binder">
 
 <details class="accordion"> <summary>New hire</summary> <div class="accordion-body">
 
@@ -99,6 +107,8 @@ Every onboarding, role change, and departure starts with one form. Fill it in, a
 </div>
 
 </div> </details>
+
+</div>
 
 <details class="accordion"> <summary>Checking a new case</summary> <div class="accordion-body">
 

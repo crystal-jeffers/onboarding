@@ -55,5 +55,7 @@ How-to guides for Southland's onboarding, role change, and offboarding system (A
 | `- **Label:** text` on every line of a list | Black labels on the left, white bubbles on the right |
 | `> Tip:`, `> Note:`, `> Important:`, `> Warning:` | Colored callouts |
 | Two or more pictures back to back | A slideshow with arrows |
+| Accordions wrapped in `<div class="binder">` and `</div>` | Binder tabs, one tab per accordion. Printing shows every tab. |
+| Links inside `<div class="quick-buttons">` | Bright orange buttons, side by side on desktop and stacked on phones |
 
-Extra blank lines add extra space. The fonts (Barlow) come from Google Fonts, which is free.
+Each extra blank line adds a line's worth of space. Blank lines just before a `## Heading` add space between the cards. The fonts (Barlow) come from Google Fonts, which is free.

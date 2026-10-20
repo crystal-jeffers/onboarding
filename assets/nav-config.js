@@ -138,7 +138,7 @@ const SOP_LIBRARY = [
     file: "guides/who-does-what.md",
     roles: ["hr", "manager"],
     featured: []
-  }
+  },
   {
     id: "emails",
     title: "Every Automated Email",
@@ -147,7 +147,7 @@ const SOP_LIBRARY = [
     file: "guides/emails.md",
     roles: ["hr", "manager"],
     featured: []
-  },
+  }
 ];
 
 // Full label shown in the sticky header for each role
