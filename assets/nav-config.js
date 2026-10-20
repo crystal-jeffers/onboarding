@@ -27,7 +27,7 @@ const SOP_LIBRARY = [
 
   {
     id: "faq",
-    title: "FAQ: What Is This Email and What Do I Do?",
+    title: "FAQ: What do I do?",
     blurb: "Got an automated email? Find out what to do.",
     group: "Start here",
     file: "guides/faq.md",
@@ -46,20 +46,20 @@ const SOP_LIBRARY = [
 
   /* ---------- HR ---------- */
   {
-    id: "start-a-case",
-    title: "Start an Onboarding, Role Change or Offboarding",
-    blurb: "Kick off a new hire, a role change, or a departure.",
-    group: "HR tasks",
-    file: "guides/hr-start-a-case.md",
-    roles: ["hr"],
-    featured: ["hr"]
-  },
-  {
     id: "hr-workspace",
     title: "HR Workspace Tour",
     blurb: "A tour of every page in the HR Workspace.",
     group: "HR tasks",
     file: "guides/hr-workspace.md",
+    roles: ["hr"],
+    featured: ["hr"]
+  },
+  {
+    id: "start-a-case",
+    title: "Case Management",
+    blurb: "Kick off a new hire, a role change, or a departure.",
+    group: "HR tasks",
+    file: "guides/hr-start-a-case.md",
     roles: ["hr"],
     featured: ["hr"]
   },
@@ -85,7 +85,7 @@ const SOP_LIBRARY = [
   /* ---------- Managers ---------- */
   {
     id: "manager-checklist",
-    title: "Manager Checklist: New Start-Up Hire",
+    title: "New Hire Checklist",
     blurb: "Every step for a new Start-Up hire, in order.",
     group: "Manager tasks",
     file: "guides/manager-checklist.md",
@@ -103,7 +103,7 @@ const SOP_LIBRARY = [
   },
   {
     id: "sending-requests",
-    title: "Sending Requests (Quick Deploy & Draft Queue)",
+    title: "Sending Requests",
     blurb: "Send early with Quick Deploy, or review drafts first.",
     group: "Manager tasks",
     file: "guides/manager-sending-requests.md",
@@ -131,15 +131,6 @@ const SOP_LIBRARY = [
     featured: []
   },
   {
-    id: "emails",
-    title: "Every Automated Email",
-    blurb: "Every email the system sends, and why.",
-    group: "Reference",
-    file: "guides/emails.md",
-    roles: ["hr", "manager"],
-    featured: []
-  },
-  {
     id: "who-does-what",
     title: "Who Does What",
     blurb: "Which team owns which steps.",
@@ -148,6 +139,15 @@ const SOP_LIBRARY = [
     roles: ["hr", "manager"],
     featured: []
   }
+  {
+    id: "emails",
+    title: "Every Automated Email",
+    blurb: "Every email the system sends, and why.",
+    group: "Reference",
+    file: "guides/emails.md",
+    roles: ["hr", "manager"],
+    featured: []
+  },
 ];
 
 // Full label shown in the sticky header for each role
