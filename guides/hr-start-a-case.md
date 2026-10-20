@@ -4,7 +4,6 @@ Every onboarding, role change, and departure starts with one form. Fill it in, a
 
 <div class="callout"><strong>You become the Case Owner</strong> of every case you submit. If a request is missing the employee's name, effective date, or location, you get one email listing what to fill in. To hand a case to someone else, change <strong>Case Owner</strong> on it.</div>
 
-<div class="callout"><strong>Rule of thumb:</strong> submit the form as soon as the decision is made: when the offer is accepted, the change is approved, or notice is given. The earlier the case exists, the more lead time IT, Safety, and Fleet get.</div>
 
 <details class="accordion"> <summary>New hire</summary> <div class="accordion-body">
 
