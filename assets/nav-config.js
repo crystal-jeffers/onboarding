@@ -35,6 +35,15 @@ const SOP_LIBRARY = [
     featured: ["hr", "manager"]
   },
   {
+    id: "moving-to-workday",
+    title: "Moving to Workday",
+    blurb: "What moves to Workday in late November, and what stays.",
+    group: "Start here",
+    file: "guides/moving-to-workday.md",
+    roles: ["hr", "manager"],
+    featured: []
+  },
+  {
     id: "timeline",
     title: "Timeline: What Happens When",
     blurb: "What happens when, for each case type.",

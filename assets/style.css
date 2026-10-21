@@ -840,6 +840,7 @@ dl.glossary [hidden] { display: none; }
 .ck .tag-conf { background: #dff0ec; color: #17594f; }
 .ck .tag-rev { background: var(--ink); color: #fff; }
 .ck .tag-if { background: #fff; border: 1px dashed #b5b5b5; color: #555; }
+.ck .tag-wd { background: #e6eefb; color: #1f4f9c; }
 .article-body ol.ck-list { list-style: none; margin: 0; padding: 0; }
 .ck-item { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--you); border-radius: var(--radius); padding: 1rem 1.15rem 0.6rem; margin: 0 0 0.9rem; }
 .ck-item.is-auto { border-left-color: var(--auto); }

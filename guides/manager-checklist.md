@@ -2,6 +2,8 @@
 
 Everything a manager does for a new Start-Up hire, on one page. Print it and tick it off with a pencil, or work through it here. It's the same list your **Triage** tracks in Airtable, so nothing here is extra.
 
+**Moving to Workday (late November 2026):** HR's part of onboarding moves into Workday. That covers new hire paperwork, tax forms, direct deposit, the I-9, and payroll. Most of this list stays with you, because it's specific to Start-Up. Steps tagged **Workday** may start in Workday once it's live, and HR will confirm which ones. Either way, this page still shows the whole process and who owns each step, so you know who to follow up with.
+
 <div class="ck" data-mode="rs">
 <div class="ck-tools">
 <span class="ck-tools-label">Your send mode:</span>
@@ -15,6 +17,7 @@ Everything a manager does for a new Start-Up hire, on one page. Print it and tic
 <div><span class="tag tag-rev">Always reviewed</span>Waits for you to check, whatever your send mode.</div>
 <div><span class="tag tag-you">You complete</span>A hands-on task for you.</div>
 <div><span class="tag tag-conf">✓ You confirm</span>Tick it when the other team says it's done.</div>
+<div><span class="tag tag-wd">Workday (likely)</span>Probably moves into Workday after go-live. <strong>Workday (TBD)</strong> means it depends on setup HR hasn't confirmed yet.</div>
 <div><span class="tag tag-if">Only when it applies</span>Skip it if it doesn't fit this hire. Triage already leaves it out.</div>
 </div>
 <div class="binder">
@@ -53,7 +56,7 @@ Everything a manager does for a new Start-Up hire, on one page. Print it and tic
 </ul>
 </li>
 <li class="ck-item is-auto">
-<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">3</span><span class="ck-title">Order the laptop</span></label><div class="ck-tags"><span class="tag tag-auto">⚡ Automatable</span></div></div>
+<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">3</span><span class="ck-title">Order the laptop</span></label><div class="ck-tags"><span class="tag tag-wd">Workday (likely)</span><span class="tag tag-auto">⚡ Automatable</span></div></div>
 <p>Sends the new hire request to the SI Help Desk. Allow 7 or more business days for delivery.</p>
 <details class="ck-more"><summary>If you fill in the request yourself</summary>
 <dl>
@@ -75,7 +78,7 @@ Everything a manager does for a new Start-Up hire, on one page. Print it and tic
 </ul>
 </li>
 <li class="ck-item is-auto">
-<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">4</span><span class="ck-title">Order the phone, iPad, and hotspot</span></label><div class="ck-tags"><span class="tag tag-auto">⚡ Automatable</span></div></div>
+<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">4</span><span class="ck-title">Order the phone, iPad, and hotspot</span></label><div class="ck-tags"><span class="tag tag-wd">Workday (TBD)</span><span class="tag tag-auto">⚡ Automatable</span></div></div>
 <p>Sends the mobile device request. It also asks IT to set up the new hire's email address.</p>
 <details class="ck-more"><summary>If you fill in the request yourself</summary>
 <dl>
@@ -92,7 +95,7 @@ Everything a manager does for a new Start-Up hire, on one page. Print it and tic
 </ul>
 </li>
 <li class="ck-item is-auto">
-<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">5</span><span class="ck-title">Request Bluebeam</span></label><div class="ck-tags"><span class="tag tag-auto">⚡ Automatable</span><span class="tag tag-if">Foreman and above, design, and detailing</span></div></div>
+<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">5</span><span class="ck-title">Request Bluebeam</span></label><div class="ck-tags"><span class="tag tag-wd">Workday (TBD)</span><span class="tag tag-auto">⚡ Automatable</span><span class="tag tag-if">Foreman and above, design, and detailing</span></div></div>
 <p>Added on its own for these roles. For anyone else who needs it, HR ticks Additional Software on the Kickoff form.</p>
 <details class="ck-more"><summary>Reason to give, if asked</summary>
 <p>"Start-Up Foreman. Needs to review, share, and mark up drawings, prints, and project documents to coordinate with project management and engineering."</p>
@@ -102,7 +105,7 @@ Everything a manager does for a new Start-Up hire, on one page. Print it and tic
 </ul>
 </li>
 <li class="ck-item is-auto">
-<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">6</span><span class="ck-title">Request a key fob</span></label><div class="ck-tags"><span class="tag tag-auto">⚡ Automatable</span></div></div>
+<div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">6</span><span class="ck-title">Request a key fob</span></label><div class="ck-tags"><span class="tag tag-wd">Workday (TBD)</span><span class="tag tag-auto">⚡ Automatable</span></div></div>
 <p>Asks Facilities for building access at the new hire's office.</p>
 <details class="ck-more"><summary>If you fill in the request yourself</summary>
 <dl>
@@ -139,7 +142,7 @@ Everything a manager does for a new Start-Up hire, on one page. Print it and tic
 <li class="ck-item">
 <div class="ck-head"><label class="ck-row"><input type="checkbox"><span class="ck-num">10</span><span class="ck-title">Day 1 training</span></label><div class="ck-tags"><span class="tag tag-you">You complete</span></div></div>
 <ul class="ck-sub">
-<li><label class="ck-row"><input type="checkbox"><span class="ck-title">SI safety training, direct deposit setup, and onboarding paperwork</span></label><span class="ck-tags"></span></li>
+<li><label class="ck-row"><input type="checkbox"><span class="ck-title">SI safety training, direct deposit setup, and onboarding paperwork</span></label><span class="ck-tags"><span class="tag tag-wd">Paperwork: Workday</span></span></li>
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Vehicle pickup</span></label><span class="ck-tags"><span class="tag tag-if">Company vehicle only</span></span></li>
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Go over how to report a vehicle accident</span></label><span class="ck-tags"><span class="tag tag-if">Company vehicle only</span></span></li>
 <li><label class="ck-row"><input type="checkbox"><span class="ck-title">Fuel card lock and the Enterprise app</span></label><span class="ck-tags"><span class="tag tag-if">Company vehicle only</span></span></li>
