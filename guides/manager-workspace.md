@@ -1,5 +1,7 @@
 # Manager Workspace Tour
 
+<div class="callout"><strong>Archived after the Workday launch.</strong> The Manager Workspace was an interim system, built to support Start-Up and Service through a period of workforce changes. Workday now handles most of the tracking, drafting, and request emails this workspace once covered, so it has been archived. This tour stays here for reference.</div>
+
 <div class="callout"><strong>Five minutes a day:</strong> check <strong>Triage</strong> for what's due, clear your <strong>Draft Queue</strong> if you review requests before they send, and use <strong>Quick Deploy</strong> to send anything you want out early.</div>
 
 

@@ -1,5 +1,7 @@
 # How It Works
 
+<div class="callout"><strong>Archived: a design exercise.</strong> This HR workspace was a theoretical system, designed to work in tandem with the Manager Workspace, the interim system that supported Start-Up and Service through a period of workforce changes. I built the HR side for fun, as practice in thinking through how two systems would interact: how to mitigate confusion between them, promote visibility, and improve ownership, so onboarding readiness improves across the board. Workday now handles onboarding, and these guides stay here for reference.</div>
+
 Every **new hire**, **role change**, and **departure** runs on one system, and each one becomes a *case*. Each case builds its own checklist, sends the requests, and tracks every step until it's done.
 
 <div class="callout"><strong>Why it exists.</strong> Onboarding used to live in inboxes and memory. A new hire touched IT, Safety, Fleet, Facilities, Accounting, and the union hall, and every manager did it a little differently. Steps got missed, and nobody could see where a hire stood.</div>
